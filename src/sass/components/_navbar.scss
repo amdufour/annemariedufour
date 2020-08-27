@@ -1,0 +1,81 @@
+.navbar {
+  padding: $gutter/2 0;
+  background-color: $purple;
+  color: $white;
+
+  // Logo
+  .logo-container {
+    a {
+      &:before {
+        display: none;
+      }
+    }
+    span {
+      display: block;
+      width: 0;
+      height: 0;
+      text-indent: -9000rem;
+    }
+  }
+
+  // Navigation
+  .main-navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    li {
+      display: flex;
+    }
+    a {
+      padding: 1rem $gutter/2;
+      font-family: $fontSecondary;
+      font-size: 1.4rem;
+      color: $white;
+      text-transform: uppercase;
+      &:before {
+        left: $gutter/2;
+        right: $gutter/2;
+        bottom: 6px;
+        background-color: $white;
+        transform: scaleX(0);
+      }
+      &:hover, &:focus {
+        &:before {
+          transform: scaleX(1);
+        }
+      }
+      &.btn {
+        margin-left: $gutter/2;
+        color: $magenta;
+        &:before {
+          bottom: 8px;
+          background-color: $magenta;
+        }
+      }
+    }
+  }
+
+  // Homepage
+  &.homepage {
+    background-color: transparent;
+    .logo-container a {
+      display: none;
+    }
+    .main-navigation {
+      a {
+        color: $text;
+        &:before {
+          background-color: $text;
+        }
+        &.btn {
+          background-color: $magenta;
+          color: $white;
+          &:before {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
