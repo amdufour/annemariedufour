@@ -1,0 +1,111 @@
+.homehero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  color: $white;
+  text-shadow: 0 2px 4px rgba($darkBlue, 0.5);
+  background-image: url(../assets/bg_with_hole.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  // Bottom triangle
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 135px 100vw;
+    border-color: transparent transparent $white transparent;
+  }
+  .interchangeable {
+    font-weight: 700;
+    color: $pink;
+  }
+  .homehero-content {
+    height: calc(100vh - 69px);
+  }
+  .homehero-left,
+  .homehero-right {
+    position: relative;
+    z-index: 3;
+  }
+
+  // Left section
+  .homehero-left {
+    max-width: 400px;
+    padding-top: 40%;
+    font-size: 4.5rem;
+    line-height: 1.3;
+  }
+
+  // Right section
+  .homehero-right {
+    padding-top: 35vh;
+    padding-left: 35%;
+    font-size: 2.5rem;
+    .salutation,
+    .job-output {
+      font-family: $fontSecondary;
+      font-weight: 700;
+    }
+    .salutation {
+      font-size: 4rem;
+    }
+    .job-title,
+    .job-impact {
+      margin-top: 30px;
+    }
+
+    // Contact button
+    .btn {
+      margin-top: 100px;
+      text-shadow: none;
+    }
+  }
+}
+
+// Background
+.homehero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-image: url(../assets/crowd.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+// Network svg
+#network {
+  position: absolute;
+  z-index: 2;
+  top: -45px;
+  left: 8vw;
+  width: 100vw;
+  height: 150vh;
+  circle {
+    filter: url('#glow');
+  }
+}
+
+// Temporary home second section
+.home-second {
+  position: relative;
+  z-index: 1;
+  min-height: 1000px;
+  margin-top: 65vh;
+  padding-top: 35vh;
+  background-image: url(../assets/bubbles_teal_large.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}

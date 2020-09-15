@@ -7,11 +7,24 @@ $gutter: 30px;
 $container: $lg;
 
 // Colors
-$bg: #F0F0F0;
-$white: #F9FFFF;
-$black: #010400;
-$grey: #BFC6D2;
-$magenta: #9D406E;
-$purple: #252142;
+$black: #07071D;
+$white: #F2F2F6;
+$darkBlue: #030226;
+$grey: #CFCFCF;
+$pink: #F25C69;
+$salmon: #F25857;
+$peach: #F2BB9C;
+$teal: #5397A6;
 
+$bg: $white;
 $text: $black;
+
+// Transitions
+@mixin easeSineOut {
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.61, 1, 0.88, 1);
+}
+@mixin easeSineIn {
+  transition-duration: 100ms;
+  transition-timing-function: cubic-bezier(0.12, 0, 0.39, 0);
+}
