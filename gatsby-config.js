@@ -9,6 +9,8 @@ const postCssPlugins = require('./postcss-config.js');
 module.exports = {
   /* Your site config here */
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-plugin-sass',
       options: {
@@ -17,6 +19,13 @@ module.exports = {
           camelCase: false,
         }
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
     },
   ],
 }
