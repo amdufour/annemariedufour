@@ -1,10 +1,36 @@
 import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import Image from 'gatsby-image/withIEPolyfill'
+import Video from './Video'
+import crowdVideo from '../assets/crowd_movie.mp4'
+import Captions from "file-loader!../assets/crowd_captions.vtt"
+import Description from "file-loader!../assets/crowd_description.vtt"
 import Network from './Network'
 
+const getImage = graphql`
+  {
+    file(relativePath: {eq: "crowd.jpg"}) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`
+
 const HeroHome = () => {
+  const screenWidth = window.innerWidth
+  const crowdImage = useStaticQuery(getImage)
+  
   return (
     <>
-      <div className="homehero-background"></div>
+      <div className="homehero-background">
+        { screenWidth >= 768
+          ? <Video src={crowdVideo} captions={Captions} description={Description} />
+          : <Image fluid={crowdImage.file.childImageSharp.fluid} alt="Crowd of people walking on a street" objectFit="cover" objectPosition="50% 50%" />
+        }
+      </div>
       <Network />
       <div className="homehero">
         <div className="container">
