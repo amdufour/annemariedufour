@@ -2,12 +2,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  height: 307px;
+  overflow: hidden;
   padding: 50px $gutter/2;
   background-color: $darkBlue;
 
   // Visualizations
   .viz-container {
     width: 200px;
+    margin-bottom: 50px;
     padding: 0 $gutter/2;
     .centered {
       transform: translate(50%, 120px);

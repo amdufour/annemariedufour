@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomeWhy = () => {
   return (
-    <div className="home-second">
+    <div className="home-why">
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-8 offset-md-2">

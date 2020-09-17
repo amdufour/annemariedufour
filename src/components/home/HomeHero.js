@@ -51,7 +51,7 @@ const HomeHero = () => {
                   <br></br>
                   <span className="interchangeable interchangeable-second">Make an Impact</span>
                 </div>
-                <a className="btn" href="/">Let's get in touch!</a>
+                <a className="btn btn-white" href="/">Let's get in touch!</a>
               </div>
             </div>
           </div>

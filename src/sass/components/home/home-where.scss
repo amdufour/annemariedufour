@@ -1,0 +1,19 @@
+.home-where {
+  margin: 200px 0 100px;
+  .supports {
+    margin-top: 5rem;
+    h3 {
+      padding-top: 65px;
+      text-align: center;
+      background-repeat: no-repeat;
+      background-position: center 0;
+      background-size: auto 45px;
+    }
+    .support-digital h3 { background-image: url(../assets/support-digital.svg); }
+    .support-print h3 { background-image: url(../assets/support-print.svg); }
+    .support-dashboard h3 { background-image: url(../assets/support-dashboard.svg); }
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}

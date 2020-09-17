@@ -1,0 +1,79 @@
+.home-projects {
+  position: relative;
+  padding: 360px 0 450px;
+  // SVG background
+  .projects-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  // Projects
+  h2 {
+    text-align: center;
+    color: $white;
+  }
+  .project-thumbnail {
+    position: relative;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background: linear-gradient(0deg, rgba($darkBlue,0.7) 0%, rgba($darkBlue,0) 100%);
+      opacity: 0;
+    }
+    .more {
+      position: absolute;
+      z-index: 1;
+      bottom: 15px;
+      right: 20px;
+      padding-right: 30px;
+      font-size: 1.5rem;
+      background-image: url(../assets/arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: right 0 top 4px;
+      opacity: 0;
+    }
+  }
+  .project-nobel .project-thumbnail { background-image: url(../assets/project-nobel.jpg); }
+  .project-foodprint .project-thumbnail { background-image: url(../assets/project-foodprint.jpg); }
+  .project-music .project-thumbnail { background-image: url(../assets/project-music.jpg); }
+  .project-network .project-thumbnail { background-image: url(../assets/project-networks.jpg); }
+  .project-title {
+    margin: 15px 0 5px;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .project-support {
+    font-family: $fontSecondary;
+    font-size: 1.3rem;
+  }
+  a {
+    display: block;
+    color: $white;
+    transition-property: opacity;
+    @include easeSineIn;
+    &:before {
+      display: none;
+    }
+    &:hover, &:focus {
+      .project-thumbnail {
+        &:after,
+        .more {
+          opacity: 1;
+          transition-property: opacity;
+          @include easeSineOut;
+        }
+      }
+    }
+  }
+}

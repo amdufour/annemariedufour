@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="371" height="455" viewBox="0 0 371 455">
+  <defs>
+    <linearGradient id="network-sample-a" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#90BE6D"/>
+      <stop offset="100%" stop-color="#577590"/>
+    </linearGradient>
+    <linearGradient id="network-sample-b" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#90BE6D"/>
+      <stop offset="100%" stop-color="#577590"/>
+    </linearGradient>
+    <linearGradient id="network-sample-c" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#90BE6D"/>
+      <stop offset="100%" stop-color="#577590"/>
+    </linearGradient>
+    <linearGradient id="network-sample-d" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#90BE6D"/>
+      <stop offset="100%" stop-color="#577590"/>
+    </linearGradient>
+    <linearGradient id="network-sample-e" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#90BE6D"/>
+      <stop offset="100%" stop-color="#577590"/>
+    </linearGradient>
+    <linearGradient id="network-sample-f" x1="48.876%" x2="51.124%" y1="50%" y2="54.106%">
+      <stop offset="0%" stop-color="#577590"/>
+      <stop offset="100%" stop-color="#F94144"/>
+    </linearGradient>
+    <linearGradient id="network-sample-g" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#577590"/>
+      <stop offset="100%" stop-color="#F9C74F"/>
+    </linearGradient>
+    <linearGradient id="network-sample-h" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#577590"/>
+      <stop offset="100%" stop-color="#F94144"/>
+    </linearGradient>
+    <linearGradient id="network-sample-i" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#577590"/>
+      <stop offset="100%" stop-color="#F94144"/>
+    </linearGradient>
+    <linearGradient id="network-sample-j" x1="0%" y1="50%" y2="50%">
+      <stop offset="0%" stop-color="#577590"/>
+      <stop offset="100%" stop-color="#F94144"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(0 1)">
+    <g transform="translate(7 30.495)">
+      <path stroke="#577590" d="M227.032581,134.424177 C217.96624,178.490172 190.916139,200.041345 145.882276,199.077694"/>
+      <path stroke="#577590" stroke-opacity=".5" stroke-width="2" d="M333.223715,25.8080825 C290.370971,104.696274 227.923825,162.452811 145.882276,199.077694"/>
+      <path stroke="#577590" d="M258.652857.153356526C246.157621 80.6515342 208.567428 146.959647 145.882276 199.077694M145.882276 199.077694C190.123939 141.372663 248.440031 108.805719 320.830553 101.376863"/>
+      <path stroke="url(#network-sample-a)" d="M40.4079664,312.196282 C54.461788,254.862209 89.6198914,217.156013 145.882276,199.077694"/>
+      <path stroke="url(#network-sample-b)" d="M0.304507339,338.397314 C28.8783277,271.162319 77.4042507,224.722446 145.882276,199.077694"/>
+      <path stroke="url(#network-sample-c)" d="M71.2407136,382.50015 C69.4053609,310.515379 94.2858819,249.37456 145.882276,199.077694"/>
+      <path stroke="url(#network-sample-d)" d="M31.8635966,330.481197 C48.0764446,267.818206 86.0826712,224.017039 145.882276,199.077694"/>
+      <path stroke="url(#network-sample-e)" d="M19.2577074,374.885486 C38.0553752,299.464632 80.2635649,240.862034 145.882276,199.077694"/>
+      <path stroke="url(#network-sample-f)" d="M145.882276,199.077694 C176.038219,250.955357 177.365313,303.558469 149.863558,356.887032"/>
+      <path stroke="url(#network-sample-g)" d="M145.882276,199.077694 C213.466738,177.43123 277.940451,184.417881 339.303414,220.037648"/>
+      <path stroke="url(#network-sample-h)" d="M145.882276,199.077694 C182.464107,241.677007 190.623669,289.149105 170.360962,341.493987"/>
+      <path stroke="url(#network-sample-i)" d="M145.882276,199.077694 C209.059512,249.169522 247.416596,313.925589 260.953529,393.345897"/>
+      <path stroke="url(#network-sample-j)" d="M145.882276,199.077694 C193.773165,225.607045 216.493106,266.191571 214.042098,320.831275"/>
+    </g>
+    <g fill-rule="nonzero" transform="translate(0 .495)">
+      <g fill="#577590" transform="translate(181.542 111.521)">
+        <ellipse cx="52.235" cy="52.369" fill-opacity=".7" stroke="#577590" stroke-width="2" rx="51.869" ry="51.87"/>
+        <ellipse cx="52.235" cy="52.369" rx="38.902" ry="38.903"/>
+      </g>
+      <g fill="#577590" transform="translate(310.35 25.07)">
+        <ellipse cx="29.537" cy="30.145" fill-opacity=".7" stroke="#577590" stroke-width="2" rx="29.393" ry="29.393"/>
+        <ellipse cx="29.537" cy="30.145" rx="22.044" ry="22.045"/>
+      </g>
+      <g fill="#577590" transform="translate(235.14)">
+        <ellipse cx="30.233" cy="29.547" fill-opacity=".7" stroke="#577590" stroke-width="2" rx="29.393" ry="29.393"/>
+        <ellipse cx="30.233" cy="29.547" rx="22.044" ry="22.045"/>
+      </g>
+      <g fill="#577590" transform="translate(122.757 198.836)">
+        <ellipse cx="29.931" cy="29.743" fill-opacity=".7" stroke="#577590" stroke-width="2" rx="29.393" ry="29.393"/>
+        <ellipse cx="29.931" cy="29.743" rx="22.044" ry="22.045"/>
+      </g>
+      <g fill="#577590" transform="translate(297.383 101.147)">
+        <ellipse cx="30.121" cy="29.678" fill-opacity=".7" stroke="#577590" stroke-width="2" rx="29.393" ry="29.393"/>
+        <ellipse cx="30.121" cy="29.678" rx="22.044" ry="22.045"/>
+      </g>
+      <g fill="#90BE6D" transform="translate(39.766 334.563)">
+        <ellipse cx="7.527" cy="7.196" fill-opacity=".7" stroke="#90BE6D" stroke-width="2" rx="7.006" ry="7.006"/>
+        <ellipse cx="7.527" cy="7.196" rx="5.254" ry="5.254"/>
+      </g>
+      <g transform="translate(0 360.498)">
+        <ellipse cx="7.22" cy="7.476" fill="#90BE6D" fill-opacity=".8" rx="7.028" ry="7.028"/>
+        <ellipse cx="7.22" cy="7.476" fill="#FBFDFE" rx="2.108" ry="2.109"/>
+      </g>
+      <g fill="#90BE6D" transform="translate(41.495 375.195)">
+        <ellipse cx="36.607" cy="36.906" fill-opacity=".7" stroke="#90BE6D" stroke-width="2" rx="36.136" ry="36.136"/>
+        <ellipse cx="36.607" cy="36.906" rx="27.102" ry="27.102"/>
+      </g>
+      <g transform="translate(31.121 351.853)">
+        <ellipse cx="7.634" cy="8.201" fill="#90BE6D" fill-opacity=".8" rx="7.365" ry="7.366"/>
+        <ellipse cx="7.634" cy="8.201" fill="#FBFDFE" rx="2.21" ry="2.21"/>
+      </g>
+      <g fill="#90BE6D" transform="translate(16.425 394.214)">
+        <ellipse cx="9.734" cy="10.268" fill-opacity=".7" stroke="#90BE6D" stroke-width="2" rx="9.613" ry="9.613"/>
+        <ellipse cx="9.734" cy="10.268" rx="7.21" ry="7.21"/>
+      </g>
+      <g fill="#F94144" transform="translate(149.556 378.653)">
+        <ellipse cx="7.11" cy="7.821" fill-opacity=".7" stroke="#F94144" stroke-width="2" rx="7.02" ry="7.02"/>
+        <ellipse cx="7.11" cy="7.821" rx="5.265" ry="5.265"/>
+      </g>
+      <g fill="#F9C74F" fill-opacity=".6" stroke="#F9C74F" transform="translate(341.64 245.228)">
+        <ellipse cx="6.378" cy="4.99" rx="2.161" ry="2.161"/>
+        <ellipse cx="3.052" cy="2.574" rx="2.161" ry="2.161"/>
+        <ellipse cx="4.322" cy="6.484" rx="2.161" ry="2.161"/>
+        <ellipse cx="5.593" cy="2.574" rx="2.161" ry="2.161"/>
+        <ellipse cx="2.267" cy="4.99" rx="2.161" ry="2.161"/>
+      </g>
+      <g fill="#F94144" fill-opacity=".6" stroke="#F94144" transform="translate(165.91 360.698)">
+        <ellipse cx="16.665" cy="12.137" rx="5.706" ry="5.706"/>
+        <ellipse cx="7.885" cy="5.758" rx="5.706" ry="5.706"/>
+        <ellipse cx="11.238" cy="16.08" rx="5.706" ry="5.706"/>
+        <ellipse cx="14.592" cy="5.758" rx="5.706" ry="5.706"/>
+        <ellipse cx="5.812" cy="12.137" rx="5.706" ry="5.706"/>
+      </g>
+      <g fill="#F94144" transform="translate(237.734 393.35)">
+        <ellipse cx="29.939" cy="29.603" fill-opacity=".7" stroke="#F94144" stroke-width="2" rx="29.393" ry="29.393"/>
+        <ellipse cx="29.939" cy="29.603" rx="22.044" ry="22.045"/>
+      </g>
+      <g fill="#FBFDFE" stroke="#F94144" transform="translate(191.051 320.73)">
+        <ellipse cx="29.745" cy="29.668" stroke-width="2" rx="29.393" ry="29.393"/>
+        <ellipse cx="29.745" cy="29.668" rx="25.935" ry="25.935"/>
+      </g>
+    </g>
+  </g>
+</svg>
