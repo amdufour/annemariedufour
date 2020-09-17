@@ -1,11 +1,11 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image/withIEPolyfill'
-import Video from './Video'
-import crowdVideo from '../assets/crowd_movie.mp4'
-import Captions from "file-loader!../assets/crowd_captions.vtt"
-import Description from "file-loader!../assets/crowd_description.vtt"
-import Network from './Network'
+import Video from '../Video'
+import crowdVideo from '../../assets/crowd_movie.mp4'
+import Captions from "file-loader!../../assets/crowd_captions.vtt"
+import Description from "file-loader!../../assets/crowd_description.vtt"
+import Network from '../Network'
 
 const getImage = graphql`
   {
@@ -19,7 +19,7 @@ const getImage = graphql`
   }
 `
 
-const HeroHome = () => {
+const HomeHero = () => {
   const screenWidth = window.innerWidth
   const crowdImage = useStaticQuery(getImage)
   
@@ -35,14 +35,14 @@ const HeroHome = () => {
       <div className="homehero">
         <div className="container">
           <div className="row">
-            <div className="col-12 col-md-5">
+            <div className="col-12 col-md-7">
               <div className="homehero-content homehero-left">
                 <div>Carefully crafted</div>
                 <div className="emphasis">Data Stories</div>
                 <div>create <span className="interchangeable">a Durable Imprint</span></div>
               </div>
             </div>
-            <div className="col-12 col-md-7">
+            <div className="col-12 col-md-5">
               <div className="homehero-content homehero-right">
                 <div className="name"><span className="salutation">Hi!</span> I'm Anne-Marie</div>
                 <div className="job-title">I Design &amp; Develop</div>
@@ -61,4 +61,4 @@ const HeroHome = () => {
   )
 }
 
-export default HeroHome
+export default HomeHero

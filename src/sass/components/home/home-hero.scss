@@ -6,10 +6,8 @@
   height: 100vh;
   color: $white;
   text-shadow: 0 2px 4px rgba($darkBlue, 0.5);
-  background-image: url(../assets/bg_with_hole.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background: linear-gradient(45deg, rgba(1,1,17,0.45) 0%, rgba(1,1,17,0.85) 100%);
+  background: linear-gradient(45deg, rgba($darkBlue,0.45) 0%, rgba($darkBlue,0.85) 100%);
 
   // Bottom triangle
   &:after {
@@ -41,15 +39,15 @@
   // Left section
   .homehero-left {
     max-width: 400px;
-    padding-top: 40%;
+    margin-top: 44%;
     font-size: 4.5rem;
     line-height: 1.3;
   }
 
   // Right section
   .homehero-right {
-    padding-top: 35vh;
-    padding-left: 35%;
+    position: relative;
+    margin-top: 35vh;
     font-size: 2.5rem;
     .salutation,
     .job-output {
@@ -66,8 +64,24 @@
 
     // Contact button
     .btn {
-      margin-top: 100px;
+      margin-top: 35px;
+      color: $teal;
       text-shadow: none;
+      background-color: $white;
+    }
+
+    // Background circle
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: -1;
+      top: -80px;
+      left: -50%;
+      width: 550px;
+      height: 550px;
+      border-radius: 50%;
+      background-color: $teal;
+      opacity: 0.75;
     }
   }
 }
@@ -79,6 +93,7 @@
   left: 0;
   right: 0;
   height: 100vh;
+  overflow: hidden;
   .gatsby-image-wrapper {
     height: 100vh;
   }
@@ -95,16 +110,4 @@
   circle {
     filter: url('#glow');
   }
-}
-
-// Temporary home second section
-.home-second {
-  position: relative;
-  z-index: 1;
-  min-height: 1000px;
-  margin-top: 65vh;
-  padding-top: 35vh;
-  background-image: url(../assets/bubbles_teal_large.svg);
-  background-repeat: no-repeat;
-  background-position: 0 0;
 }

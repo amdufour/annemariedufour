@@ -1,13 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap&family=Hind+Madurai:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400&display=swap&family=Hind+Madurai:wght@400;600&display=swap');
 
 $fontPrimary: 'Hind Madurai', sans-serif;
 $fontSecondary: 'Lora', serif;
-$fontSize: 1.4rem;
+$fontSize: 1.8rem;
 
 // Titles
 h1, h2, h3, h4, h5, h6 {
   font-family: $fontSecondary;
   font-weight: 400;
+}
+
+h2 {
+  font-size: 4rem;
 }
 
 // Links
@@ -39,5 +43,5 @@ a {
 
 // Bold text
 .emphasis {
-  font-weight: 700;
+  font-weight: 600;
 }
