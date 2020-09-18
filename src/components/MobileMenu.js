@@ -21,7 +21,7 @@ class MobileMenu extends React.Component {
       <>
         <nav className={`navbar navbar-mobile ${this.props.styleClass ? this.props.styleClass : ""}`}>
           <div className="container">
-            <div className="row">
+            <div className="row align-items-center">
               <div className="col-6 logo-container">
                 <Link to="/">
                   <span>Go back to homepage</span>
