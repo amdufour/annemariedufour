@@ -1,10 +1,12 @@
 .home-who {
-  margin: 100px 0 200px;
+  margin: 160px 0 200px;
   .btn {
     margin-top: 2rem;
   }
   .network-sample {
+    width: 150%;
     height: 100%;
+    margin-left: -25%;
     background-image: url(../assets/network-sample.svg);
     background-repeat: no-repeat;
     background-position: center;

@@ -1,14 +1,10 @@
 .home-projects {
   position: relative;
-  padding: 360px 0 450px;
-  // SVG background
-  .projects-bg {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
+  padding: 350px 0 150px;
+  background-image: url(../assets/projects-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 
   // Projects
   h2 {
