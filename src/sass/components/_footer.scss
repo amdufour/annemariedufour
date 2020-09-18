@@ -1,0 +1,60 @@
+footer {
+  margin-top: 200px;
+  padding: 150px 0 15px;
+  background: linear-gradient(165deg, rgba($darkBlue,1) 0%, rgba($teal,1) 100%);
+  color: $white;
+
+  // Top section
+  .footer-top {
+    margin-bottom: 250px;
+    text-align: center;
+    h2 {
+      font-size: 3.5rem;
+    }
+  }
+
+  // Bottom section
+  .footer-bottom {
+    font-size: 1.3rem;
+    a {
+      z-index: 1;
+      color: $white;
+      &:before {
+        z-index: -1;
+        background-color: rgba($pink, 0.3);
+      }
+    }
+    // Copyright
+    .copyright {
+      text-align: center;
+    }
+    // Social links
+    .social-links {
+      text-align: right;
+      li {
+        display: inline-block;
+        margin-top: -8px;
+        margin-left: 20px;
+        a {
+          .logo-instagram g,
+          .logo-behance g,
+          .logo-linkedin path {
+            transition-property: fill;
+            @include easeSineIn;
+          }
+          &:before {
+            display: none;
+          }
+          &:hover, &:focus {
+            .logo-instagram g,
+            .logo-behance g,
+            .logo-linkedin path {
+              fill: rgba($darkBlue, 0.7);
+              @include easeSineOut;
+            }
+          }
+        }
+      }
+    }
+  }
+}

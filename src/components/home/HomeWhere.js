@@ -14,18 +14,18 @@ const HomeWhere = () => {
         <div className="row supports">
           <div className="col-12 col-md-8 offset-md-2">
             <div className="row">
-              <div className="col-12 col-md-4 support support-digital">
+              <div className="col-12 col-md-6 support support-digital">
                 <h3>Digital supports</h3>
                 <p>The support of choice to explore a subject through carefully crafted interactions.</p>
               </div>
-              <div className="col-12 col-md-4 support support-print">
+              <div className="col-12 col-md-6 support support-print">
                 <h3>Printed publications</h3>
                 <p>To add depth and context to articles, impress stakeholders in reports and raise awareness on posters.</p>
               </div>
-              <div className="col-12 col-md-4 support support-dashboard">
+              {/* <div className="col-12 col-md-4 support support-dashboard">
                 <h3>Dashboards</h3>
                 <p>To follow critical data in real-time and take early informed decisions.</p>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

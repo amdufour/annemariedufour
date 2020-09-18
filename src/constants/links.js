@@ -4,8 +4,8 @@ import { Link } from 'gatsby'
 const data = [
   {
     id: 1,
-    text: 'portfolio',
-    url: '#portfolio'
+    text: 'my work',
+    url: '/#portfolio'
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export default ({ styleClass })=> {
           return (
             <li key={link.id}>
               <Link to={link.url}
-                    className={index === (data.length - 1) ? "btn" : null}>
+                    className={index === (data.length - 1) ? "btn btn-white" : "nav-link"}>
                 {link.text}
               </Link>
             </li>

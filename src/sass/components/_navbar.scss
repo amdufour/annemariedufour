@@ -1,9 +1,9 @@
 .navbar {
   position: relative;
   z-index: 100;
-  padding: $gutter/2 0;
+  padding: 10px 0;
   background-color: $grey;
-  background-color: $grey;
+  background-color: $teal;
   color: $white;
 
   // Logo
@@ -18,6 +18,9 @@
       width: 0;
       height: 0;
       text-indent: -9000rem;
+    }
+    .logo {
+      height: 50px;
     }
   }
 
@@ -36,24 +39,24 @@
       font-weight: 600;
       color: $white;
       text-transform: uppercase;
-      &:before {
-        left: $gutter/2;
-        right: $gutter/2;
-        bottom: 6px;
-        background-color: $white;
-        transform: scaleX(0);
-      }
-      &:hover, &:focus {
+      &.nav-link {
         &:before {
-          transform: scaleX(1);
+          left: $gutter/2;
+          right: $gutter/2;
+          bottom: 6px;
+          background-color: $white;
+          transform: scaleX(0);
+        }
+        &:hover, &:focus {
+          &:before {
+            transform: scaleX(1);
+          }
         }
       }
       &.btn {
         margin-left: $gutter/2;
         color: $teal;
-        &:before {
-          bottom: 8px;
-        }
+        text-transform: capitalize;
       }
     }
   }
