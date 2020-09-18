@@ -10,13 +10,10 @@
   border-radius: 3px;
   transition-property: all;
   @include easeSineIn;
-  &:before {
-    left: 0;
-    right: 0;
-  }
   &:hover, &:focus {
     color: $teal;
     background-color: $white;
+    box-shadow: rgba($pink, 0.3) 0 -34px 0 0 inset;
     @include easeSineOut;
   }
 
@@ -24,16 +21,19 @@
   &.btn-white {
     color: $teal;
     background-color: $white;
+    &:hover, &:focus {
+      color: $white;
+      box-shadow: rgba($pink, 1) 0 -39px 0 0 inset;
+    }
   }
 
   // Pink buttons
   &.btn-pink {
     background-color: $pink;
-    &:before {
-      background-color: rgba($white, 0.3);
-    }
+    box-shadow: rgba($white, 0.4) 0px -5px 0px 0px inset;
     &:hover, &:focus {
       color: $white;
+      box-shadow: rgba($teal, 1) 0 -39px 0 0 inset;
     }
   }
 }

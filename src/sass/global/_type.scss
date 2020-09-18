@@ -24,28 +24,15 @@ h3 {
 
 // Links
 a {
-  position: relative;
+  // position: relative;
   color: $text;
   text-decoration: none;
-  &:before {
-    content: '';
-    position: absolute;
-    left: -2px;
-    right: -2px;
-    bottom: 1px;
-    height: 3px;
-    background-color: rgba($teal, .3);
-    transform: translateY(0) scaleY(1);
-    transition: transform 200ms ease-in;
-    transition-property: all;
-    @include easeSineIn;
-  }
+  box-shadow: rgba($teal, 0.3) 0 -5px 0 0 inset;
+  transition-property: box-shadow;
+  @include easeSineIn;
   &:hover, &:focus {
-    &:before {
-      transform: translateY(-3px) scaleY(3);
-      transition: transform 200ms ease-out;
-      @include easeSineOut;
-    }
+    box-shadow: rgba($teal, 0.3) 0 -18px 0 0 inset;
+    @include easeSineOut;
   }
 }
 

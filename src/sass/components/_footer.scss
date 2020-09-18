@@ -6,36 +6,23 @@ footer {
 
   // Top section
   .footer-top {
-    margin-bottom: 250px;
     text-align: center;
     h2 {
       font-size: 3.5rem;
     }
-  }
-
-  // Bottom section
-  .footer-bottom {
-    font-size: 1.3rem;
-    a {
-      z-index: 1;
-      color: $white;
-      &:before {
-        z-index: -1;
-        background-color: rgba($pink, 0.3);
-      }
-    }
-    // Copyright
-    .copyright {
-      text-align: center;
-    }
     // Social links
     .social-links {
-      text-align: right;
+      margin: 150px 0;
+      text-align: center;
       li {
         display: inline-block;
         margin-top: -8px;
         margin-left: 20px;
+        &:first-of-type {
+          margin-left: 0;
+        }
         a {
+          box-shadow: none;
           .logo-instagram g,
           .logo-behance g,
           .logo-linkedin path {
@@ -49,11 +36,38 @@ footer {
             .logo-instagram g,
             .logo-behance g,
             .logo-linkedin path {
-              fill: rgba($darkBlue, 0.7);
+              fill: $pink;
               @include easeSineOut;
             }
           }
         }
+      }
+    }
+  }
+
+  // Bottom section
+  .footer-bottom {
+    font-size: 1.3rem;
+    a {
+      z-index: 1;
+      color: $white;
+      box-shadow: rgba($pink, 0.3) 0 -5px 0 0 inset;
+      &:hover, &:focus {
+        box-shadow: rgba($pink, 0.3) 0 -16px 0 0 inset;
+      }
+    }
+    // Copyright
+    .copyright {
+      text-align: right;
+    }
+    @media (max-width: $lg) {
+      .credits,
+      .copyright {
+        line-height: 1.2;
+        text-align: center;
+      }
+      .credits {
+        margin-bottom: 10px;
       }
     }
   }
