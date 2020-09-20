@@ -20,6 +20,12 @@ body{
   color: $text;
   fill: $text;
   background: $bg;
+
+  // Prevent background scrolling when mobile menu is active
+  &.freeze {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
 input,

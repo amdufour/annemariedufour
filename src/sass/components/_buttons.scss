@@ -36,4 +36,9 @@
       box-shadow: rgba($teal, 1) 0 -39px 0 0 inset;
     }
   }
+
+  // Large buttons
+  &.btn-large {
+    padding: 1.5rem 30px;
+  }
 }
