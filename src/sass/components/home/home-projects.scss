@@ -55,6 +55,8 @@
   }
   a {
     display: block;
+    margin: 0 auto 30px;
+    max-width: 350px;
     color: $white;
     box-shadow: none;
     transition-property: opacity;

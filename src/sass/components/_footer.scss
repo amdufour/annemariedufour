@@ -3,6 +3,9 @@ footer {
   padding: 150px 0 15px;
   background: linear-gradient(165deg, rgba($darkBlue,1) 0%, rgba($teal,1) 100%);
   color: $white;
+  @media (max-width: $sm) {
+    margin-top: 120px;
+  }
 
   // Top section
   .footer-top {

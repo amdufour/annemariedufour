@@ -5,8 +5,8 @@ const HomeProjects = () => {
     <div id="portfolio" className="home-projects">
       <div className="container">
         <h2>Selected projects</h2>
-        <div className="row">
-          <div className="col-12 col-md-3">
+        <div className="row justify-content-center">
+          <div className="col-12 col-lg-3 col-md-4 col-sm-6">
             <a className="project project-nobel" href="/">
               <div className="project-thumbnail">
                 <div className="more">Explore the project</div>
@@ -15,7 +15,7 @@ const HomeProjects = () => {
               <div className="project-support">digital</div>
             </a>
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-lg-3 col-md-4 col-sm-6">
             <a className="project project-foodprint" href="/">
               <div className="project-thumbnail">
                 <div className="more">Explore the project</div>
@@ -24,7 +24,7 @@ const HomeProjects = () => {
               <div className="project-support">digital</div>
             </a>
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-lg-3 col-md-4 col-sm-6">
             <a className="project project-music" href="/">
               <div className="project-thumbnail">
                 <div className="more">Explore the project</div>
@@ -33,7 +33,7 @@ const HomeProjects = () => {
               <div className="project-support">digital</div>
             </a>
           </div>
-          <div className="col-12 col-md-3">
+          <div className="col-12 col-lg-3 col-md-4 col-sm-6">
             <a className="project project-network" href="/">
               <div className="project-thumbnail">
                 <div className="more">Explore the project</div>

@@ -20,6 +20,9 @@ body{
   color: $text;
   fill: $text;
   background: $bg;
+  @media (max-width: $sm) {
+    font-size: 1.6rem;
+  }
 
   // Prevent background scrolling when mobile menu is active
   &.freeze {

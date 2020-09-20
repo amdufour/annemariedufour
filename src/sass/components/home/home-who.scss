@@ -12,4 +12,7 @@
     background-position: center;
     background-size: contain;
   }
+  @media (max-width: $sm) {
+    margin: 100px 0 120px;
+  }
 }

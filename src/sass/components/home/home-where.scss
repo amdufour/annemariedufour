@@ -1,7 +1,10 @@
 .home-where {
-  margin: 160px 0 50px;
+  margin: 160px 0 30px;
   .supports {
     margin-top: 5rem;
+    .support {
+      margin-bottom: 20px;
+    }
     h3 {
       padding-top: 65px;
       text-align: center;
@@ -16,5 +19,9 @@
       font-size: 1.5rem;
       text-align: center;
     }
+  }
+
+  @media (max-width: $sm) {
+    margin: 100px 0 0;
   }
 }

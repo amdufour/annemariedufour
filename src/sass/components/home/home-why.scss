@@ -3,4 +3,8 @@
   z-index: 3;
   margin-top: calc(100vh + 150px);
   margin-bottom: 200px;
+  @media (max-width: $sm) {
+    margin-top: calc(100vh + 50px);
+    margin-bottom: 120px;
+  }
 }
