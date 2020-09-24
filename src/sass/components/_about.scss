@@ -1,0 +1,95 @@
+.page-about {
+  .btn-skills {
+    margin: 10px 0 30px;
+  }
+
+  // Portrait
+  .portrait-container {
+    position: relative;
+    margin: 40px 0;
+    .portrait {
+      position: relative;
+      z-index: 1;
+    }
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      background-repeat: no-repeat;
+      background-position: 0 center;
+      background-size: contain;
+    }
+    &:before {
+      top: -40px;
+      left: -200px;
+      width: 60%;
+      height: 250px;
+      background-image: url(../assets/nodes-portrait-left.svg);
+    }
+    &:after {
+      bottom: -40px;
+      right: -100px;
+      width: 30%;
+      height: 150px;
+      background-image: url(../assets/nodes-portrait-right.svg);
+    }
+    @media (max-width: $md) {
+      &:before {
+        top: -60px;
+        left: -150px;
+      }
+      &:after {
+        bottom: -60px;
+        right: -80px;
+      }
+    }
+    @media (max-width: $sm) {
+      &:before {
+        top: -100px;
+        left: -60px;
+      }
+      &:after {
+        bottom: -80px;
+        right: -50px;
+      }
+    }
+  }
+
+  // Skills
+  .skills {
+    margin-top: 60px;
+  }
+  .skill {
+    padding: 5px 0 20px 55px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 40px auto;
+    &.skill-data {
+      background-image: url(../assets/skill-data.svg);
+    }
+    &.skill-design {
+      background-image: url(../assets/skill-design.svg);
+    }
+    &.skill-development {
+      background-image: url(../assets/skill-development.svg);
+    }
+    &.skill-languages {
+      background-image: url(../assets/skill-language.svg);
+      background-size: 43px auto;
+    }
+    &.skill-location {
+      background-image: url(../assets/location.svg);
+      background-position: 6px 0;
+      background-size: 33px auto;
+    }
+    h3 {
+      margin: 0 0 5px;
+    }
+  }
+
+  // Contact button
+  .contact {
+    margin: 100px 0 200px;
+  }
+}

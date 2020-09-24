@@ -46,17 +46,17 @@
   .project-network .project-thumbnail { background-image: url(../assets/project-networks.jpg); }
   .project-title {
     margin: 15px 0 5px;
+    font-size: 2.2rem;
     line-height: 1.2;
     font-weight: 600;
   }
   .project-support {
     font-family: $fontSecondary;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
   a {
     display: block;
-    margin: 0 auto 30px;
-    max-width: 350px;
+    margin: 0 auto 50px;
     color: $white;
     box-shadow: none;
     transition-property: opacity;

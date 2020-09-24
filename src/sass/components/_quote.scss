@@ -1,0 +1,76 @@
+.quote {
+  margin: 10rem 0;
+  padding: 80px 0;
+  background-color: $teal;
+  color: $white;
+  font-weight: 500;
+  .quote-content,
+  .quote-author,
+  .quote-organization {
+    position: relative;
+    z-index: 2;
+  }
+  .quote-content {
+    font-weight: 600;
+    line-height: 1.6;
+  }
+  .quote-author,
+  .quote-organization {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    text-align: right;
+    a {
+      color: $white;
+      box-shadow: rgba($pink, 0.3) 0 -4px 0 0 inset;
+      &:hover, &:focus {
+        box-shadow: rgba($pink, 0.3) 0 -18px 0 0 inset;
+      }
+    }
+  }
+  .container {
+    position: relative;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 200px;
+      height: 225px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    &:before {
+      top: -140px;
+      left: -14%;
+      background-image: url(../assets/quote-left.svg);
+    }
+    &:after {
+      bottom: -140px;
+      right: -14%;
+      background-image: url(../assets/quote-right.svg);
+    }
+    @media (max-width: $lg) {
+      &:before,
+      &:after {
+        width: 150px;
+        height: 125px;
+      }
+      &:before {
+        top: -110px;
+        left: -30px;
+      }
+      &:after {
+        bottom: -110px;
+        right: -30px;
+      }
+    }
+    @media (max-width: $sm) {
+      &:before,
+      &:after {
+        width: 100px;
+        height: 85px;
+      }
+    }
+  }
+}

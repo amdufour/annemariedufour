@@ -11,8 +11,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h2 {
+h1 {
   margin: 4rem 0;
+  font-size: 5rem;
+}
+h2 {
+  margin: 10rem 0 4rem;
   font-size: 4rem;
   @media (max-width: $sm) {
     font-size: 3rem;

@@ -11,11 +11,13 @@ export default function Home() {
   return (
     <Layout styleClass="homepage">
       <HomeHero />
-      <HomeWhy />
-      <HomeSpotifyBanner />
-      <HomeWhere />
-      <HomeProjects />
-      <HomeWho />
+      <div className="home-content">
+        <HomeWhy />
+        <HomeSpotifyBanner />
+        <HomeWhere />
+        <HomeProjects />
+        <HomeWho />
+      </div>
     </Layout>
   )
 }
