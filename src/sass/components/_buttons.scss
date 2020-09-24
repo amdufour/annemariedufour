@@ -44,6 +44,11 @@
     &:hover, &:focus {
       box-shadow: rgba($pink, 1) 0 -47px 0 0 inset;
     }
+    &.btn-white {
+      &:hover, &:focus {
+        box-shadow: rgba($pink, 1) 0 -47px 0 0 inset;
+      }
+    }
     &.btn-pink {
       &:hover, &:focus {
         box-shadow: rgba($teal, 1) 0 -47px 0 0 inset;
