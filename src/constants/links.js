@@ -5,7 +5,7 @@ const data = [
   {
     id: 1,
     text: 'my work',
-    url: '/#portfolio'
+    url: '/projects'
   },
   {
     id: 2,

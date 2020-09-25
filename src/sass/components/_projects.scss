@@ -1,0 +1,77 @@
+.projects {
+  .project-thumbnail {
+    position: relative;
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background: linear-gradient(0deg, rgba($darkBlue,0.85) 0%, rgba($darkBlue,0) 100%);
+      opacity: 0;
+    }
+    .more {
+      position: absolute;
+      z-index: 1;
+      bottom: 15px;
+      right: 20px;
+      padding-right: 30px;
+      color: $white;
+      background-image: url(../assets/arrow-right.svg);
+      background-repeat: no-repeat;
+      background-position: right 0 top 6px;
+      opacity: 0;
+    }
+  }
+  .project-nobel .project-thumbnail { background-image: url(../assets/project-nobel.jpg); }
+  .project-foodprint .project-thumbnail { background-image: url(../assets/project-foodprint.jpg); }
+  .project-music .project-thumbnail { background-image: url(../assets/project-music.jpg); }
+  .project-network .project-thumbnail {
+    background-color: #fff;
+    background-image: url(../assets/projects/org-democracy/network-bg-nodes.svg);
+    background-size: 700px auto;
+    background-position: right -30px bottom 25px;
+  }
+  .project-title {
+    margin: 15px 0 5px;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: 600;
+  }
+  .project-support {
+    font-family: $fontSecondary;
+    font-size: 1.6rem;
+  }
+  a {
+    display: block;
+    margin: 0 auto 50px;
+    box-shadow: none;
+    transition-property: opacity;
+    @include easeSineIn;
+    &:before {
+      display: none;
+    }
+    &:hover, &:focus {
+      .project-thumbnail {
+        &:after,
+        .more {
+          opacity: 1;
+          transition-property: opacity;
+          @include easeSineOut;
+        }
+      }
+    }
+  }
+
+  // Projects displayed on homepage
+  &.home-projects {
+    a {
+      color: $white;
+    }
+  }
+}
