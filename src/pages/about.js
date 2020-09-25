@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from '../components/Layout'
 import CtaPortfolio from '../components/CtaPortfolio'
@@ -31,7 +31,7 @@ const About = () => {
           <div className="container">
             <h3>Hi there, welcome to my site!</h3>
             <p>Now that you’ve reached my about page, you probably already know that I Design and Develop creative Data Visualizations. If you came to this page to know if my soft and technical skills and the tools I use match your project, the button below will bring you exactly to the right place.</p>
-            <a className="btn btn-large btn-skills " href="#skills">Learn more about my skills</a>
+            <Link className="btn btn-large btn-skills " to="#quote-kian">Learn more about my skills</Link>
             <p>If you want to know more about me and my background, I condensed the info that might interest you in the following section.</p>
             
             <h2>My background and how I came to Data Visualizations, a long story short…</h2>
@@ -51,7 +51,7 @@ const About = () => {
             <p>The quality which probably describes best my way of working is the enthusiasm I bring to my work. I simply love what I do and would probably do it as a hobby if it wasn’t my career. Creating an experience and a wow effect to users brings me a deep sense of satisfaction and I love spending time on these small details that make all the difference.</p>
             <p>I currently live in Budapest and I am used to collaborate with clients and team from all around the world. I am autonomous and enjoy working on my own. But I also cherish human connections and I am pleased to collaborating with teams to bring a common vision forward.</p> 
           </div>
-          <div className="quote">
+          <div id="quote-kian" className="quote">
             <div className="container">
               <div className="row">
                 <div className="col-12 col-lg-10 offset-lg-1">
