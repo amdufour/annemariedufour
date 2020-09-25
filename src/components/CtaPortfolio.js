@@ -8,8 +8,9 @@ const CtaPortfolio = () => {
           <div className="col-12 col-md-8">
             <h2>Tailor made Data Visualizations</h2>
             <div className="cta-content">To tell insightful stories</div>
-            <div className="cta-content">To create a wow moment</div>
+            <div className="cta-content">To generate engagement</div>
             <div className="cta-content">To make an impact</div>
+            <div className="cta-content cta-content-more">And so much more ...</div>
             <a className="btn btn-large btn-pink" href="/">Take a look at my work</a>
           </div>
         </div>
