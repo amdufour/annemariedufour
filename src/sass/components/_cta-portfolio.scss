@@ -1,10 +1,12 @@
 .cta-portfolio {
+  position: relative;
   margin-bottom: -200px;
   padding: 150px 0;
-  background-image: url(../assets/bg-network.jpg);
+  background-color: #fff;
+  background-image: url(../assets/network-bg.svg);
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: right -100px bottom -280px;
+  background-size: 1200px auto;
   h2 {
     margin-top: 0;
   }
