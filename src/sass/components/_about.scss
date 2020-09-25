@@ -11,47 +11,33 @@
       position: relative;
       z-index: 1;
     }
-    &:before,
-    &:after {
-      content: '';
+    .portrait-bubbles-left,
+    .portrait-bubbles-right {
       position: absolute;
       z-index: 2;
-      background-repeat: no-repeat;
-      background-position: 0 center;
-      background-size: contain;
+      filter: url('#glow');
+      overflow: visible;
     }
-    &:before {
-      top: -40px;
+    .portrait-bubbles-left {
+      top: -30px;
       left: -200px;
-      width: 60%;
-      height: 250px;
-      background-image: url(../assets/nodes-portrait-left.svg);
     }
-    &:after {
+    .portrait-bubbles-right {
       bottom: -40px;
       right: -100px;
-      width: 30%;
-      height: 150px;
-      background-image: url(../assets/nodes-portrait-right.svg);
     }
     @media (max-width: $md) {
-      &:before {
-        top: -60px;
-        left: -150px;
+      .portrait-bubbles-left {
+        left: -250px;
       }
-      &:after {
-        bottom: -60px;
-        right: -80px;
+      .portrait-bubbles-right {
+        right: -150px;
       }
     }
     @media (max-width: $sm) {
-      &:before {
-        top: -100px;
-        left: -60px;
-      }
-      &:after {
-        bottom: -80px;
-        right: -50px;
+      .portrait-bubbles-left,
+      .portrait-bubbles-right {
+        display: none;
       }
     }
   }
