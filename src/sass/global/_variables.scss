@@ -19,6 +19,8 @@ $teal: #5397A6;
 $bg: $white;
 $text: $darkBlue;
 
+$radius: 3px;
+
 // Transitions
 @mixin easeSineOut {
   transition-duration: 150ms;

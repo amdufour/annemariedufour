@@ -46,7 +46,7 @@ const Projects = () => {
                   <div className="project-thumbnail">
                     <div className="more">Learn more</div>
                   </div>
-                  <div className="project-title">Organizations working against polarization</div>
+                  <div className="project-title">Organizations joining forces against polarization</div>
                   <div className="project-support">digital</div>
                 </Link>
               </div>

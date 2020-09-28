@@ -1,0 +1,64 @@
+.page-project {
+  // Header
+  .page-project-header {
+    position: relative;
+    height: 500px;
+    background-color: #fff;
+    .row {
+      height: 500px;
+    }
+    h1 {
+      margin: 5px 0;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(#fff, 0) 0%, rgba(#fff, 0.7) 20%, rgba(#fff, 0.7) 60%, rgba(#fff, 0) 100%);
+    }
+    @media (max-width: $sm) {
+      height: calc(100vh - 60px);
+    }
+  }
+  &.page-project-organizations-against-polarization .page-project-header {
+    background-image: url(../assets/network-bg.svg);
+    background-repeat: no-repeat;
+    background-position: right 80px center;
+    background-size: auto 800px;
+    @media (max-width: $sm) {
+      background-position: right -200px top 0;
+    }
+  }
+
+  // Overview box
+  .project-overview {
+    margin: 100px 0;
+    padding: 80px 30px;
+    background-color: $teal;
+    color: $white;
+    border-radius: $radius;
+    h2 {
+      margin-top: 0;
+    }
+    h3 {
+      margin: 0 0 5px;
+      line-height: 1.2;
+    }
+    .overview-element {
+      margin-bottom: 30px;
+      a {
+        color: $white;
+        box-shadow: rgba($pink, 0.3) 0 -5px 0 0 inset;
+        &:hover, &:focus {
+          box-shadow: rgba($pink, 0.3) 0 -18px 0 0 inset;
+        }
+      }
+    }
+    .project-btn-container {
+      margin-top: 1rem;
+    }
+  }
+}

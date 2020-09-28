@@ -13,15 +13,16 @@
 @import "components/social-links";
 @import "components/footer";
 @import "components/cta-portfolio";
-@import "components/projects";
 
 // Homepage
-@import "components/home/home-hero";
-@import "components/home/home-why";
-@import "components/home/home-banner";
-@import "components/home/home-where";
-@import "components/home/home-projects";
-@import "components/home/home-who";
+@import "pages/home/home-hero";
+@import "pages/home/home-why";
+@import "pages/home/home-banner";
+@import "pages/home/home-where";
+@import "pages/home/home-projects";
+@import "pages/home/home-who";
 
 // Inner pages
-@import "components/about"
+@import "pages/about";
+@import "pages/projects";
+@import "pages/project"
