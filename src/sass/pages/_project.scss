@@ -34,21 +34,22 @@
   }
 
   // Overview box
-  .project-overview {
-    margin: 100px 0;
-    padding: 80px 30px;
-    background-color: $teal;
+  .project-overview-container {
+    margin: 115px 0;
+    padding: 40px 30px;
     color: $white;
+    background-color: $teal;
     border-radius: $radius;
-    h2 {
-      margin-top: 0;
-    }
+  }
+  .project-overview {
+    font-size: 1.6rem;
+    line-height: 1.2;
     h3 {
-      margin: 0 0 5px;
-      line-height: 1.2;
+      margin: 0 0 2px;
+      font-size: 1.8rem;
     }
     .overview-element {
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       a {
         color: $white;
         box-shadow: rgba($pink, 0.3) 0 -5px 0 0 inset;
@@ -57,8 +58,32 @@
         }
       }
     }
-    .project-btn-container {
-      margin-top: 1rem;
+    @media (max-width: $lg) {
+      margin-bottom: 10px;
     }
+  }
+  .project-main-image-container {
+    a {
+      display: block;
+      padding: 0;
+      box-shadow: none;
+      &:hover, &:focus {
+        box-shadow: none;
+      }
+      picture img {
+        border-radius: $radius;
+      }
+    }
+  }
+  .project-btn-container {
+    margin-top: 30px;
+    @media (max-width: $lg) {
+      text-align: center;
+    }
+  }
+
+  // Project description
+  .project-description {
+    
   }
 }
