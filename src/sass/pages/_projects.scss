@@ -1,4 +1,24 @@
-.projects {
+// Project thumbnails
+.project {
+  display: block;
+  margin: 0 auto 50px;
+  box-shadow: none;
+  transition-property: opacity;
+  @include easeSineIn;
+  &:before {
+    display: none;
+  }
+  &:hover, &:focus {
+    box-shadow: none;
+    .project-thumbnail {
+      &:after,
+      .more {
+        opacity: 1;
+        transition-property: opacity;
+        @include easeSineOut;
+      }
+    }
+  }
   .project-thumbnail {
     position: relative;
     padding-top: 100%;
@@ -28,10 +48,10 @@
       opacity: 0;
     }
   }
-  .project-nobel .project-thumbnail { background-image: url(../assets/project-nobel.jpg); }
-  .project-foodprint .project-thumbnail { background-image: url(../assets/project-foodprint.jpg); }
-  .project-music .project-thumbnail { background-image: url(../assets/project-music.jpg); }
-  .project-network .project-thumbnail {
+  &.project-nobel .project-thumbnail { background-image: url(../assets/project-nobel.jpg); }
+  &.project-foodprint .project-thumbnail { background-image: url(../assets/project-foodprint.jpg); }
+  &.project-music .project-thumbnail { background-image: url(../assets/project-music.jpg); }
+  &.project-network .project-thumbnail {
     background-color: #fff;
     background-image: url(../assets/projects/org-democracy/network-bg-nodes.svg);
     background-size: 700px auto;
@@ -47,31 +67,11 @@
     font-family: $fontSecondary;
     font-size: 1.6rem;
   }
-  a {
-    display: block;
-    margin: 0 auto 50px;
-    box-shadow: none;
-    transition-property: opacity;
-    @include easeSineIn;
-    &:before {
-      display: none;
-    }
-    &:hover, &:focus {
-      .project-thumbnail {
-        &:after,
-        .more {
-          opacity: 1;
-          transition-property: opacity;
-          @include easeSineOut;
-        }
-      }
-    }
-  }
+}
 
-  // Projects displayed on homepage
-  &.home-projects {
-    a {
-      color: $white;
-    }
+// Projects displayed on homepage
+.home-projects {
+  .project {
+    color: $white;
   }
 }

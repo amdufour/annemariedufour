@@ -1,0 +1,46 @@
+.more-projects {
+  margin-top: 200px;
+  margin-bottom: -200px;
+  padding: 150px 0;
+  overflow: hidden;
+  h2 {
+    margin: 0 0 50px;
+  }
+  .btn-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+
+  &.spotify {
+    position: relative;
+    color: $white;
+    background-color: $darkBlue;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      bottom: -160px;
+      right: 0;
+      width: 40%;
+      height: 100%;
+      background-image: url(../assets/spotify_element.svg);
+      background-repeat: no-repeat;
+      background-size: 200% auto;
+      background-position: 0 0;
+      opacity: 0.7;
+      @media (max-width: $lg) {
+        width: 60%;
+      }
+      @media (max-width: $sm) {
+        display: none;
+      }
+    }
+    .project {
+      color: $white;
+    }
+    .btn {
+      @extend .btn-white;
+    }
+  }
+}

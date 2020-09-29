@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import CodeBlock from '../../components/CodeBlock'
+import SeeMoreProjects from '../../components/SeeMoreProjects'
 import { graphql, useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
 import Video from '../../components/Video'
@@ -226,10 +227,16 @@ const OrganizationsAgainstPolarization = () => {
               <h2>Responsive considerations</h2>
               <p></p>
               <p></p>
+              <div className="project-bottom-link-container">
+                <a className="btn btn-pink btn-large" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank" rel="noreferrer">Take a look at the project</a>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      {/* See more projects */}
+      <SeeMoreProjects background="spotify" projects={[3, 4]} />
     </Layout>
   )
 }
