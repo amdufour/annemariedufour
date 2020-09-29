@@ -27,7 +27,7 @@ const HomeHero = () => {
     <>
       <div className="homehero-background">
         { screenWidth >= 768
-          ? <Video src={crowdVideo} captions={Captions} description={Description} />
+          ? <Video src={crowdVideo} captions={Captions} description={Description} autoplay={true} loop={true} controls={false} />
           : <Image fluid={crowdImage.file.childImageSharp.fluid} alt="Crowd of people walking on a street" objectFit="cover" objectPosition="50% 50%" />
         }
       </div>

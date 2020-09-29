@@ -82,6 +82,16 @@
     }
   }
 
-  // Code snippets
-  
+  // Project description
+  .image-container {
+    img {
+      border-radius: $radius;
+    }
+    .caption {
+      margin: 10px 0 30px;
+      font-size: 1.5rem;
+      color: rgba($text, 0.5);
+      text-align: center;
+    }
+  }
 }
