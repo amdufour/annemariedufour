@@ -1,0 +1,32 @@
+.prism-code {
+  padding: 25px 15px 25px 5px;
+  background-color: lighten($teal, 70%) !important;
+  border: 1px solid $teal;
+  border-radius: $radius;
+  .line-number,
+  .line-content {
+    display: inline-block;
+  }
+  .line-number {
+    margin-right: 20px;
+    width: 30px;
+    text-align: right;
+  }
+  .comment {
+    font-weight: bold;
+  }
+  .line-number,
+  .comment {
+    color: $teal !important;
+  }
+  .punctuation,
+  .operator {
+    color: rgba($text, 0.5) !important;
+  }
+  .string {
+    color: $pink !important;
+  }
+  .number {
+    color: $darkBlue !important;
+  }
+}

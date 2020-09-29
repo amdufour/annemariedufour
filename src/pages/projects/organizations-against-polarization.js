@@ -17,29 +17,29 @@ const getProjectImages = graphql`
 `
 
 const dataFormatSample = `
-  // Data format sample
+/* Data format sample */
 
-  {
-    "nodes": [
-      {
-        "id": 1,
-        ...
-      },
-      {
-        "id": 2,
-        ...
-      },
+{
+  "nodes": [
+    {
+      "id": 1,
       ...
-    ],
-    "links": [
-      {
-        "source": 1,
-        "target": 2,
-        "weight": 1
-      },
+    },
+    {
+      "id": 2,
       ...
-    ]
-  }
+    },
+    ...
+  ],
+  "links": [
+    {
+      "source": 1,
+      "target": 2,
+      "weight": 1
+    },
+    ...
+  ]
+}
 `
 
 const OrganizationsAgainstPolarization = () => {
