@@ -1,7 +1,8 @@
 import React from 'react'
-import Layout from '../../components/Layout'
 import { graphql, useStaticQuery } from 'gatsby'
 import Image from 'gatsby-image'
+import Layout from '../../components/Layout'
+import CodeBlock from '../../components/CodeBlock'
 
 const getProjectImages = graphql`
   {
@@ -12,6 +13,32 @@ const getProjectImages = graphql`
         }
       }
     }
+  }
+`
+
+const dataFormatSample = `
+  // Data format sample
+
+  {
+    "nodes": [
+      {
+        "id": 1,
+        ...
+      },
+      {
+        "id": 2,
+        ...
+      },
+      ...
+    ],
+    "links": [
+      {
+        "source": 1,
+        "target": 2,
+        "weight": 1
+      },
+      ...
+    ]
   }
 `
 
@@ -98,9 +125,7 @@ const OrganizationsAgainstPolarization = () => {
               <h2>Exploring and understanding the data</h2>
               <p>began my exploration of the data by listing the type of information available for each organization. I knew right ahead that it would be interesting to represent the estimated number of people impacted visually. I also observed that I could link organizations by tags, representing each organization's field of action, and group the nodes by type of organizations, which is their main area of focus. My imagination was firing, thinking about all the visual possibilities, and I quickly concluded that this data visualization could be a project on its own and that I would later extract a simplified version of it for my website. Also, some information was missing from the original dataset. But after an afternoon of data gathering, I filled the gaps.</p>
               <p>I then used SQL and python to clean and prepare the data. For example, I grouped the tags into an array for each organization. I found that D3 needs a specific data format to realize a force simulation (used to position the links and nodes in a network). It requires a JSON file with the nodes' information grouped in an object, and the connections between each node explicitly listed in another one. Here's how it looked like for me:</p>
-              <div className="code-snippet">
-                
-              </div>
+              <CodeBlock code={dataFormatSample} />
               <p>Even for a relatively small dataset of 163 organizations, this format generates a massive file of many thousand lines. Not something you wanna write by hand… Fortunately, I could quickly obtain the structure I needed by writing a small Python script.</p>
               <p>Realizing that the dataset contained 21 types of organizations, I decided to group them into meta-categories: Communications, Civic life, Community, Economy, Technology, and Education, allowing to represent them by color.</p>
               <p></p>
