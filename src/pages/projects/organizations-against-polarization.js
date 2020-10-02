@@ -118,7 +118,7 @@ const OrganizationsAgainstPolarization = () => {
                 </div>
                 <div className="col-12 col-lg-7">
                   <div className='project-main-image-container'>
-                    <a className="btn btn-white" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank" rel="noreferrer">
+                    <a className="btn btn-white" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">
                       <Image className="project-main-image" fluid={projectImages.allFile.nodes[1].childImageSharp.fluid} alt="Screenshot of the project" />
                     </a>
                   </div>
@@ -127,7 +127,7 @@ const OrganizationsAgainstPolarization = () => {
               <div className="row">
                 <div className="col-12 col-lg-7 offset-lg-5">
                   <div className="project-btn-container">
-                    <a className="btn btn-white" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank" rel="noreferrer">Take a look at the project</a>
+                    <a className="btn btn-white" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Take a look at the project</a>
                   </div>
                 </div>
               </div>
@@ -228,7 +228,7 @@ const OrganizationsAgainstPolarization = () => {
               <p></p>
               <p></p>
               <div className="project-bottom-link-container">
-                <a className="btn btn-pink btn-large" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank" rel="noreferrer">Take a look at the project</a>
+                <a className="btn btn-pink btn-large" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Take a look at the project</a>
               </div>
             </div>
           </div>
