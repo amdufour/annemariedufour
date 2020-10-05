@@ -29,4 +29,23 @@
       box-shadow: rgba($pink, 1) 0 -53px 0 0 inset;
     }
   }
+
+  // Pink buttons
+  &.btn-pink {
+    color: $white;
+    background-color: $pink;
+    box-shadow: rgba($white, 0.5) 0px -5px 0px 0px inset;
+    &:hover {
+      color: $white;
+      box-shadow: rgba($teal, 1) 0 -53px 0 0 inset;
+    }
+  }
+
+  // Pink on rollover
+  &.btn-pink-rollover {
+    &:hover {
+      color: $white;
+      box-shadow: rgba($pink, 1) 0 -53px 0 0 inset;
+    }
+  }
 }

@@ -127,7 +127,7 @@ const OrganizationsAgainstPolarization = () => {
               <div className="row">
                 <div className="col-12 col-lg-7 offset-lg-5">
                   <div className="project-btn-container">
-                    <a className="btn btn-white" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Take a look at the project</a>
+                    <a className="btn btn-pink-rollover" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Take a look at the project</a>
                   </div>
                 </div>
               </div>
@@ -228,7 +228,7 @@ const OrganizationsAgainstPolarization = () => {
               <p></p>
               <p></p>
               <div className="project-bottom-link-container">
-                <a className="btn" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Take a look at the project</a>
+                <a className="btn btn-pink" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Take a look at the project</a>
               </div>
             </div>
           </div>

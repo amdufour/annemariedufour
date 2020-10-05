@@ -8,7 +8,7 @@ const getImage = graphql`
   {
     file(relativePath: {eq: "portrait-thin.jpg"}) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 990, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -31,15 +31,13 @@ const About = () => {
           <div className="container">
             <h3>Hi there, welcome to my site!</h3>
             <p>Now that you’ve reached my about page, you probably already know that I Design and Develop creative Data Visualizations. If you came to this page to know if my soft and technical skills and the tools I use match your project, the button below will bring you exactly to the right place.</p>
-            <Link className="btn btn-skills " to="#quote-kian">Learn more about my skills</Link>
+            <Link className="btn btn-teal btn-skills" to="#quote-kian">Learn more about my skills</Link>
             <p>If you want to know more about me and my background, I condensed the info that might interest you in the following section.</p>
             
             <h2>My background and how I came to Data Visualizations, a long story short…</h2>
             <p>I grew up in Arvida, a small industrial town located in the province of Quebec, in Canada. As many kids, I thought for a very long time that I hated maths and that I would never even be good at them. I was more the literature and artsy type and thought that was it! But around the age of 14, one of my teachers was explaining maths so well that I started to actually enjoy them. I enjoyed them so much, that I ended up earning a B.Sc. in mechanical engineering. Let’s just say that this path sounded like a way to still do a fair amount of math, while opting for a “responsible” career. Since I see math and science problems like fun puzzles to solve, I really enjoyed my studies. But when came the time to consider dimensioning shafts for a living… let’s say this was less then attractive to me.</p>
             <div className="portrait-container">
-              <svg className="portrait-bubbles-left" xmlns="http://www.w3.org/2000/svg" width="461" height="213"><defs><filter id="glow"><feGaussianBlur stdDeviation="2.5" result="coloredBlur"/><feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><g fill="none"><circle cx="367.221" cy="10.756" r="10.6" fill="#F25857" fill-opacity=".294" transform="rotate(90 367.221 10.756)"/><circle cx="401.673" cy="58.974" r="58.974" fill="#F25857" fill-opacity=".601" transform="rotate(90 401.673 58.974)"/><circle cx="192.392" cy="37.333" r="8.254" fill="#F25857" fill-opacity=".7" transform="rotate(90 192.392 37.333)"/><circle cx="171.896" cy="35.361" r="8.035" fill="#F25857" fill-opacity=".2" transform="rotate(90 171.896 35.36)"/><circle cx="197.541" cy="49.809" r="8.038" fill="#F25C69" fill-opacity=".5" transform="rotate(90 197.541 49.809)"/><circle cx="104.31" cy="10.565" r="8.003" fill="#5397A6" fill-opacity=".2" transform="rotate(90 104.31 10.565)"/><circle cx="348.323" cy="39.759" r="8.027" fill="#5397A6" fill-opacity=".875" transform="rotate(90 348.323 39.76)"/><circle cx="165.646" cy="86.423" r="34" fill="#F2BB9C" fill-opacity=".7" transform="rotate(90 165.646 86.423)"/><circle cx="204.996" cy="30.729" r="8.65" fill="#F25C69" transform="rotate(90 204.996 30.73)"/><circle cx="265.782" cy="58.094" r="23.6" fill="#F25C69" fill-opacity=".763" transform="rotate(90 265.782 58.094)"/><circle cx="183.646" cy="44.079" r="5" fill="#F2BB9C" fill-opacity=".6" transform="rotate(90 183.646 44.08)"/><circle cx="34" cy="178.324" r="34" fill="#F2BB9C" fill-opacity=".803" transform="rotate(90 34 178.324)"/><circle cx="152.05" cy="183.956" r="13.2" fill="#5397A6" transform="rotate(90 152.05 183.956)"/><circle cx="82.282" cy="37.609" r="10.6" fill="#F2BB9C" fill-opacity=".8" transform="rotate(90 82.282 37.609)"/><circle cx="116.581" cy="43.049" r="34" fill="#F25C69" fill-opacity=".704" transform="rotate(90 116.581 43.05)"/><circle cx="107.88" cy="138.949" r="60" fill="#5397A6" fill-opacity=".568" transform="rotate(90 107.88 138.949)"/><circle cx="68.294" cy="38.659" r="5" fill="#5397A6" fill-opacity=".7" transform="rotate(90 68.294 38.659)"/></g></svg>
               <Image className="portrait" fluid={aboutImage.file.childImageSharp.fluid} alt="Photo of Anne-Marie" />
-              <svg className="portrait-bubbles-right" xmlns="http://www.w3.org/2000/svg" width="229" height="159"><g fill="none" transform="translate(.825)"><circle cx="50.467" cy="99.021" r="34" fill="#5397A6" fill-opacity=".715" transform="rotate(90 50.467 99.02)"/><circle cx="129.29" cy="71.699" r="60" fill="#F25C69" fill-opacity=".584" transform="rotate(90 129.29 71.699)"/><circle cx="38.408" cy="38.265" r="38.265" fill="#F25857" fill-opacity=".4" transform="rotate(90 38.408 38.265)"/><circle cx="158.749" cy="134.769" r="13.2" fill="#F25857" fill-opacity=".311" transform="rotate(90 158.75 134.77)"/><circle cx="83.35" cy="22.266" r="8.52" fill="#F25857" fill-opacity=".9" transform="rotate(90 83.35 22.266)"/><circle cx="194.165" cy="124.537" r="34" fill="#F2BB9C" fill-opacity=".3" transform="rotate(90 194.165 124.537)"/></g></svg>
             </div>
             <p>After my undergrad studies, I worked for 5 years in research, focusing on fluid dynamics simulations. That’s where I got exposed for the first time to the manipulation of large datasets. At the same time, I became a teaching assistant at my alma mater. This is one of the positions I loved the most in my career. Clarifying and making complex subjects accessible came naturally to me.</p>
             <p>Then, my partner and I had our first son. We decided it was time to realize one of our dreams and moved to Europe, more specifically to Budapest. I used this blank slate to reinvent my career a bit and learned frontend development. I then joined Inovae (link), a web agency based in Geneva. During the next 4 years, I learned the trade’s best practices and trained my eye for seamless user experiences (UX). In addition to working with a team with is still today very dear to my hearth, I had the chance to collaborate on projects for diverse NGOs and institutions, including the <a href="https://www.uicc.org/" target="_blank" rel="noreferrer">Union for International Cancer Control (UICC)</a>, the <a href="https://edb.wto.org/" target="_blank" rel="noreferrer">World Trade Organization (WTO)</a> and the <a href="https://www.ecolint.ch/" target="_blank" rel="noreferrer">International School of Geneva</a>.</p>
@@ -95,7 +93,7 @@ const About = () => {
                 <div className="list">Collaborating with teams worldwide</div>
               </div>
             </div>
-            <a className="btn contact" href="/">Contact me</a>
+            <a className="btn btn-teal contact" href="/">Contact me</a>
           </div>
           <CtaPortfolio />
         </div>

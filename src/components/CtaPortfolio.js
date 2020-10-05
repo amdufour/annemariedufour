@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 const CtaPortfolio = () => {
   return (
@@ -11,7 +12,7 @@ const CtaPortfolio = () => {
             <div className="cta-content">To generate engagement</div>
             <div className="cta-content">To make an impact</div>
             <div className="cta-content cta-content-more">And so much more ...</div>
-            <a className="btn" href="/">Take a look at my work</a>
+            <Link className="btn btn-pink" to="/projects">Take a look at my work</Link>
           </div>
         </div>
       </div>
