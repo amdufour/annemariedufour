@@ -1,10 +1,9 @@
 .home-inner-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  // height: 307px;
   height: 500px;
-  overflow: hidden;
-  padding: 50px $gutter/2;
-  // background-color: $text;
+  @media (max-width: $md) {
+    height: 350px;
+  }
+  @media (max-width: $sm) {
+    height: 250px;
+  }
 }
