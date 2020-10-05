@@ -1,8 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1781" viewBox="0 0 1440 1781">
-  <g fill="#5397A6" fill-rule="evenodd">
-    <polygon fill-opacity=".4" points="0 72 1440 160.828 1440 1778 0 1778"/>
-    <polygon fill-opacity=".4" points="0 0 1440 620 1440 1778 0 1778"/>
-    <polygon fill-opacity=".4" points="0 161 1440 147 1440 1778 0 1778"/>
-    <polygon fill-opacity=".8" points="0 320.307 1440 72 1440 1781 0 1786"/>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1781"><g fill="#07A3B2" fill-rule="evenodd"><path fill-opacity=".4" d="M0 72l1440 88.828V1778H0z"/><path fill-opacity=".4" d="M0 0l1440 620v1158H0z"/><path fill-opacity=".4" d="M0 161l1440-14v1631H0z"/><path fill-opacity=".8" d="M0 320.307L1440 72v1709L0 1786z"/></g></svg>
