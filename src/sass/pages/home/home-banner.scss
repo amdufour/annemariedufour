@@ -1,50 +1,10 @@
-.home-banner {
+.home-inner-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 307px;
+  // height: 307px;
+  height: 500px;
   overflow: hidden;
   padding: 50px $gutter/2;
-  background-color: $darkBlue;
-
-  // Visualizations
-  .viz-container {
-    width: 200px;
-    margin-bottom: 50px;
-    padding: 0 $gutter/2;
-    .centered {
-      transform: translate(50%, 120px);
-    }
-  }
-  // Center circle fill
-  .stream-color-pop { fill: url('#radial-gradient-pop'); }
-  .stream-color-rb { fill: url('#radial-gradient-rb'); }
-  .stream-color-hip_hop { fill: url('#radial-gradient-hip_hop'); }
-  .stream-color-latin { fill: url('#radial-gradient-latin'); }
-  .stream-color-dance { fill: url('#radial-gradient-dance'); }
-  .stream-color-rock { fill: url('#radial-gradient-rock'); }
-
-  // Glow
-  .track-1 .stream-color { filter: url('#glow-1'); }
-  .track-21 .stream-color { filter: url('#glow-21'); }
-  .track-24 .stream-color { filter: url('#glow-24'); }
-  .track-25 .stream-color { filter: url('#glow-25'); }
-  .track-28 .stream-color { filter: url('#glow-28'); }
-  .track-29 .stream-color { filter: url('#glow-29'); }
-  .track-44 .stream-color { filter: url('#glow-44'); }
-  .track-77 .stream-color { filter: url('#glow-77'); }
-  .track-81 .stream-color { filter: url('#glow-81'); }
-  .track-86 .stream-color { filter: url('#glow-86'); }
-
-  // Appearance circles
-  .appearance-circle {
-    fill: url('#radial-gradient-black') !important;
-  }
-
-  // Side arcs
-  .arc-duration-bg,
-  .arc-liveness-bg {
-    fill: $white;
-    fill-opacity: 0.2;
-  }
+  // background-color: $text;
 }
