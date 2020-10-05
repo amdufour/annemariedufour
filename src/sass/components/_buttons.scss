@@ -21,12 +21,12 @@
 
   // Blue buttons
   &.btn-teal {
-    color: $teal;
-    background-color: $white;
-    box-shadow: rgba($teal, 0.4) 0px -5px 0px 0px inset;
+    color: $white;
+    background-color: $teal;
+    box-shadow: rgba($white, 0.5) 0px -5px 0px 0px inset;
     &:hover {
       color: $white;
-      box-shadow: rgba($pink, 1) 0 -39px 0 0 inset;
+      box-shadow: rgba($pink, 1) 0 -53px 0 0 inset;
     }
   }
 }

@@ -53,7 +53,7 @@ const About = () => {
             <p>The quality which probably describes best my way of working is the enthusiasm I bring to my work. I simply love what I do and would probably do it as a hobby if it wasn’t my career. Creating an experience and a wow effect to users brings me a deep sense of satisfaction and I love spending time on these small details that make all the difference.</p>
             <p>I currently live in Budapest and I am used to collaborate with clients and team from all around the world. I am autonomous and enjoy working on my own. But I also cherish human connections and I am pleased to collaborating with teams to bring a common vision forward.</p> 
           </div>
-          <div id="quote-kian" className="quote">
+          <div id="quote-kian" className="quote quote-full-width">
             <div className="container">
               <div className="row">
                 <div className="col-12 col-lg-10 offset-lg-1">
