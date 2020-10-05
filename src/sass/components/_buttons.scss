@@ -9,7 +9,7 @@
   border-radius: $radius;
   transition-property: all;
   @include easeSineIn;
-  &:hover, &:focus {
+  &:hover {
     color: $white;
     box-shadow: rgba($teal, 1) 0 -53px 0 0 inset;
     @include easeSineOut;
@@ -24,7 +24,7 @@
     color: $teal;
     background-color: $white;
     box-shadow: rgba($teal, 0.4) 0px -5px 0px 0px inset;
-    &:hover, &:focus {
+    &:hover {
       color: $white;
       box-shadow: rgba($pink, 1) 0 -39px 0 0 inset;
     }

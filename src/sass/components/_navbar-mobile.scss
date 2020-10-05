@@ -1,5 +1,4 @@
 .navbar-mobile {
-  padding-top: 20px;
   height: 60px;
   .logo-container a .logo {
     height: 40px;
@@ -10,6 +9,7 @@
   .hamburger-box {
     position: relative;
     z-index: 101;
+    top: 3px;
     display: inline-block;
     width: 30px;
     height: 24px;
@@ -27,7 +27,7 @@
       transition-timing-function: ease;
       transition-duration: .15s;
       transition-property: transform;
-      border-radius: $radius;
+      border-radius: 3px;
       background-color: $white;
     }
     .hamburger-inner {
@@ -60,15 +60,29 @@
     left: 0;
     right: 0;
     height: 100vh;
-    background: linear-gradient(165deg, rgba($darkBlue,1) 0%, rgba($teal,1) 100%);
+    background: $teal;
     color: $white;
     opacity: 0;
     transition-property: all;
     transition-timing-function: cubic-bezier(.55,.055,.675,.19);
     transition-duration: 75ms;
+    .home-link {
+      span {
+        display: block;
+        width: 0;
+        height: 0;
+        text-indent: -9000rem;
+      }
+      box-shadow: none;
+      .logo {
+        display: block;
+        margin: 70px auto 0;
+        height: 70px;
+      }
+    }
     .main-navigation {
       display: block;
-      margin: 150px auto 50px;
+      margin: 80px auto 50px;
       max-width: 250px;
       text-align: center;
       li {
@@ -84,7 +98,9 @@
           }
           &.btn {
             display: inline-block;
-            margin: 100px auto 0;
+            margin: 80px auto 0;
+            min-width: 130px;
+            font-weight: 700;
           }
           &:before {
             display: none;

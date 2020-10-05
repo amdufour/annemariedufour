@@ -2,22 +2,23 @@
   position: relative;
   z-index: 100;
   padding: 10px 0;
-  background: linear-gradient(25deg, rgba($darkBlue,1) 0%, rgba($teal,1) 100%);
+  background: $teal;
+  background: linear-gradient(45deg, rgba($teal,1) 0%, rgba($teal,1) 45%, rgba($yellow,1) 100%);
 
   // Logo
   .logo-container {
     a {
       box-shadow: none;
       .logo {
-        height: 50px;
-        g {
+        display: block;
+        path {
           transition-property: stroke;
           @include easeSineIn;
         }
       }
       &:hover, &:focus {
-        .logo g {
-          stroke: $teal;
+        .logo path {
+          stroke: $yellow;
           @include easeSineOut;
         }
       }

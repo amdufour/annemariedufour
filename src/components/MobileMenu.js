@@ -45,6 +45,10 @@ class MobileMenu extends React.Component {
           <div className="menu-mobile">
             <div className="container">
               <div className="navigation">
+                <Link className="home-link" to="/">
+                  <span>Go back to homepage</span>
+                  <Logo />
+                </Link>
                 <NavLinks />
               </div>
               <div className="social">
