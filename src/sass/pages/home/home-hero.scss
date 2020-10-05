@@ -1,110 +1,108 @@
 .homehero {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  color: $white;
-  text-shadow: 0 2px 4px rgba($darkBlue, 0.5);
-  background: linear-gradient(45deg, rgba($darkBlue,0.45) 0%, rgba($darkBlue,0.85) 100%);
-
-  // Bottom triangle
-  &:after {
-    content: '';
-    position: absolute;
+  position: relative;
+  height: calc(100vh + 80px);
+  padding-top: 270px;
+  background: $teal;
+  background: linear-gradient(120deg, rgba($teal,1) 0%, rgba($yellow,1) 100%);
+  .container {
+    position: relative;
     z-index: 1;
-    left: 0;
-    right: 0;
-    bottom: -1px;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 0 135px calc(100vw + 1px);
-    border-color: transparent transparent $white transparent;
   }
-  .interchangeable {
-    font-weight: 700;
-    color: $pink;
+  @media (max-width: $md) {
+    height: calc(100vh + 25px);
   }
-  .homehero-content {
-    height: calc(100vh - 69px);
-  }
-  .homehero-left,
-  .homehero-right {
-    position: relative;
-    z-index: 3;
+  @media (max-width: $sm) {
+    height: calc(100vh + 10px);
+    padding-top: 150px;
   }
 
-  // Left section
-  .homehero-left {
-    max-width: 400px;
-    margin-top: 44%;
-    font-size: 4.5rem;
-    line-height: 1.3;
-  }
-
-  // Right section
-  .homehero-right {
-    position: relative;
-    margin-top: 35vh;
-    font-size: 2.5rem;
-    .salutation,
-    .job-output {
-      font-family: $fontSecondary;
+  // Text
+  .tagline {
+    font-family: $fontSecondary;
+    font-size: 5rem;
+    .em {
       font-weight: 700;
     }
+    .rotating-text {
+      .em {
+        color: $white;
+      }
+    }
+    @media (max-width: $sm) {
+      font-size: 3rem;
+    }
+  }
+  .introduction {
+    margin-top: 150px;
+    font-size: 2.6rem;
+    .intro-section {
+      margin: 25px 0;
+    }
     .salutation {
+      margin-right: 10px;
       font-size: 4rem;
+      font-weight: 600;
     }
-    .job-title,
-    .job-impact {
-      margin-top: 30px;
+    .rotating-text {
+      color: $white;
+      font-weight: 600;
     }
-
-    // Contact button
     .btn {
-      margin-top: 35px;
-      text-shadow: none;
+      margin-top: 12px;
+      font-size: 1.8rem;
     }
-
-    // Background circle
-    &:before {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      top: -80px;
-      left: -50%;
-      width: 550px;
-      height: 550px;
-      border-radius: 50%;
-      background-color: $teal;
-      opacity: 0.75;
+    @media (max-width: $sm) {
+      margin-top: 80px;
+      font-size: 1.8rem;
+      .intro-section {
+        margin: 15px 0;
+      }
+      .salutation {
+        margin-right: 8px;
+        font-size: 3rem;
+      }
     }
   }
-}
 
-// Background
-.homehero-background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 100vh;
-  overflow: hidden;
-  .gatsby-image-wrapper {
-    height: 100vh;
+  // Logo in background
+  .logo-bg {
+    position: absolute;
+    z-index: 0;
+    top: -80px;
+    left: -70px;
+    width: 42%;
+    height: 60%;
+    background-image: url(../assets/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 0;
+    opacity: 0.3;
+    @media (max-width: $xl) {
+      width: 50%;
+    }
+    @media (max-width: $lg) {
+      left: -150px;
+      width: 60%;
+    }
+    @media (max-width: $md) {
+      width: 80%;
+    }
+    @media (max-width: $sm) {
+      width: 100%;
+    }
   }
-}
 
-// Network svg
-#network {
-  position: absolute;
-  z-index: 2;
-  top: -45px;
-  left: 8vw;
-  width: 100vw;
-  height: 150vh;
-  circle {
-    filter: url('#glow');
+  // Bottom triangles
+  .homehero-bottom-triangles {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    padding-bottom: 15.8%;
+    background-image: url(../assets/hero-triangles.svg);
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0;
+    background-size: 100% auto;
   }
 }

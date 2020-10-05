@@ -1,4 +1,5 @@
 .navbar-mobile {
+  padding-top: 20px;
   height: 60px;
   .logo-container a .logo {
     height: 40px;
@@ -84,7 +85,6 @@
           &.btn {
             display: inline-block;
             margin: 100px auto 0;
-            @extend .btn-large;
           }
           &:before {
             display: none;

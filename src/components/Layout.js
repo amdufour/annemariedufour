@@ -13,23 +13,41 @@ function handleFirstTab(e) {
 }
 window.addEventListener('keydown', handleFirstTab);
 
-const Layout = ({ children, styleClass }) => {
-  const screenWidth = window.innerWidth
+class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isMobile: false
+    }
+    this.updateDimensions = this.updateDimensions.bind(this);
+  }
 
-  return (
-    <>
-      <header>
-        {screenWidth < 576
-          ? <MobileMenu styleClass={styleClass} />
-          : <Navbar styleClass={styleClass} />
-        }
-      </header>
-      <main>
-        {children}
-      </main>
-      <Footer />
-    </>
-  )
+  componentDidMount() {
+    this.updateDimensions();
+    window.addEventListener('resize', this.updateDimensions);
+  }
+
+  updateDimensions() {
+    const mobileScreen = window.innerWidth <= 768 ? true : false;
+    this.setState({ isMobile: mobileScreen });
+  }
+
+  render () {
+    return (
+      <>
+        <header>
+          {this.state.isMobile
+            ? <MobileMenu styleClass={this.props.styleClass} />
+            : <Navbar styleClass={this.props.styleClass} />
+          }
+        </header>
+        <main>
+          {this.props.children}
+        </main>
+        <Footer />
+      </>
+    )
+  }
 }
 
 export default Layout;

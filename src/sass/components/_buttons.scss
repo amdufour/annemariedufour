@@ -1,58 +1,32 @@
 .btn {
   display: inline-block;
-  padding: 12px 15px 10px;
+  padding: 15px 22px 13px;
   background-color: $white;
-  font-size: 1.6rem;
-  line-height: 1.1;
   font-weight: 600;
-  color: $white;
-  background-color: $teal;
-  box-shadow: rgba($white, 0.5) 0px -5px 0px 0px inset;
+  color: $teal;
+  background-color: $white;
+  box-shadow: rgba($teal, 0.3) 0px -5px 0px 0px inset;
   border-radius: $radius;
   transition-property: all;
   @include easeSineIn;
   &:hover, &:focus {
     color: $white;
-    box-shadow: rgba($pink, 1) 0 -39px 0 0 inset;
+    box-shadow: rgba($teal, 1) 0 -53px 0 0 inset;
     @include easeSineOut;
   }
+  @media (max-width: $md) {
+    padding: 12px 18px 10px;
+    font-size: 1.6rem;
+  }
 
-  // White buttons
-  &.btn-white {
+  // Blue buttons
+  &.btn-teal {
     color: $teal;
     background-color: $white;
     box-shadow: rgba($teal, 0.4) 0px -5px 0px 0px inset;
     &:hover, &:focus {
       color: $white;
       box-shadow: rgba($pink, 1) 0 -39px 0 0 inset;
-    }
-  }
-
-  // Pink buttons
-  &.btn-pink {
-    background-color: $pink;
-    box-shadow: rgba($white, 0.4) 0px -5px 0px 0px inset;
-    &:hover, &:focus {
-      color: $white;
-      box-shadow: rgba($teal, 1) 0 -39px 0 0 inset;
-    }
-  }
-
-  // Large buttons
-  &.btn-large {
-    padding: 1.5rem 30px;
-    &:hover, &:focus {
-      box-shadow: rgba($pink, 1) 0 -47px 0 0 inset;
-    }
-    &.btn-white {
-      &:hover, &:focus {
-        box-shadow: rgba($pink, 1) 0 -47px 0 0 inset;
-      }
-    }
-    &.btn-pink {
-      &:hover, &:focus {
-        box-shadow: rgba($teal, 1) 0 -47px 0 0 inset;
-      }
     }
   }
 }

@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-top">
           <h2>Ready to bring your data to life?</h2>
-          <a className="btn btn-large btn-white" href="/">Let's get in touch!</a>
+          <a className="btn btn-white" href="/">Let's get in touch!</a>
           <SocialLinks />
         </div>
         <div className="footer-bottom">

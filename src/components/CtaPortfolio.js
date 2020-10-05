@@ -11,7 +11,7 @@ const CtaPortfolio = () => {
             <div className="cta-content">To generate engagement</div>
             <div className="cta-content">To make an impact</div>
             <div className="cta-content cta-content-more">And so much more ...</div>
-            <a className="btn btn-large btn-pink" href="/">Take a look at my work</a>
+            <a className="btn" href="/">Take a look at my work</a>
           </div>
         </div>
       </div>

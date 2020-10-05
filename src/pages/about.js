@@ -31,7 +31,7 @@ const About = () => {
           <div className="container">
             <h3>Hi there, welcome to my site!</h3>
             <p>Now that you’ve reached my about page, you probably already know that I Design and Develop creative Data Visualizations. If you came to this page to know if my soft and technical skills and the tools I use match your project, the button below will bring you exactly to the right place.</p>
-            <Link className="btn btn-large btn-skills " to="#quote-kian">Learn more about my skills</Link>
+            <Link className="btn btn-skills " to="#quote-kian">Learn more about my skills</Link>
             <p>If you want to know more about me and my background, I condensed the info that might interest you in the following section.</p>
             
             <h2>My background and how I came to Data Visualizations, a long story short…</h2>
@@ -95,7 +95,7 @@ const About = () => {
                 <div className="list">Collaborating with teams worldwide</div>
               </div>
             </div>
-            <a className="btn btn-large contact" href="/">Contact me</a>
+            <a className="btn contact" href="/">Contact me</a>
           </div>
           <CtaPortfolio />
         </div>

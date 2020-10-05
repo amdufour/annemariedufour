@@ -15,7 +15,7 @@ const SeeMoreProjects = ({background, projects}) => {
           </div>
         </div>
         <div className="btn-container">
-          <a className="btn btn-large" href="/">Go to my portfolio</a>
+          <a className="btn" href="/">Go to my portfolio</a>
         </div>
       </div>
     </div>
