@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectThumbnail from '../constants/projectsThumbnails'
+import { Link } from 'gatsby'
 
 const SeeMoreProjects = ({background, projects}) => {
   return (
@@ -15,7 +16,7 @@ const SeeMoreProjects = ({background, projects}) => {
           </div>
         </div>
         <div className="btn-container">
-          <a className="btn" href="/">Go to my portfolio</a>
+          <Link className="btn" to="/projects">Go to my portfolio</Link>
         </div>
       </div>
     </div>
