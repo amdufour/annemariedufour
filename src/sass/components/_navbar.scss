@@ -12,6 +12,7 @@
       .logo {
         display: block;
         path {
+          stroke-width: 1.5;
           transition-property: stroke;
           @include easeSineIn;
         }

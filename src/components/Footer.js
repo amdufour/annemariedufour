@@ -1,5 +1,6 @@
 import React from 'react'
 import SocialLinks from './SocialLinks'
+import Logo from './Logo'
 
 const Footer = () => {
   const creationYear = 2020
@@ -10,6 +11,7 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="footer-top">
+          <Logo />
           <h2>Ready to bring your data to life?</h2>
           <a className="btn btn-white" href="/">Let's get in touch!</a>
           <SocialLinks />
