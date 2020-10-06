@@ -26,7 +26,7 @@ const projectsInfo = [
     title: 'Daily Foodprint',
     readmore: 'Explore the project',
     support: 'digital',
-    link: '/',
+    link: 'https://amdufour.github.io/your-daily-foodprint/',
     external: true
   },
   {
