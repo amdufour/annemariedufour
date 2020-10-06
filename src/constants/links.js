@@ -27,7 +27,8 @@ export default ({ styleClass })=> {
           return (
             <li key={link.id}>
               <Link to={link.url}
-                    className={index === (data.length - 1) ? "btn btn-white" : "nav-link"}>
+                    className={index === (data.length - 1) ? "btn btn-white" : "nav-link"}
+                    activeClassName="active">
                 {link.text}
               </Link>
             </li>

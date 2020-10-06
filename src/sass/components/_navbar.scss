@@ -69,6 +69,12 @@
           }
         }
       }
+      &.active {
+        cursor: default;
+        &:before {
+          transform: scaleX(1);
+        }
+      }
       &.btn {
         margin-left: $gutter/2;
         font-size: 1.6rem;
