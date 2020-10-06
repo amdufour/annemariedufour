@@ -1,0 +1,26 @@
+.error-page {
+  h1 {
+    display: inline-block;
+    margin: 100px 0 0;
+    padding: 55px 120px 55px 0;
+    background-image: url(../assets/surprised.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100px;
+    @media (max-width: $md) {
+      padding-right: 60px;
+      background-size: auto 50px;
+    }
+    @media (max-width: $sm) {
+      padding-right: 0;
+      background-position: 0 0;
+    }
+  }
+  .apologie {
+    margin-bottom: 70px;
+  }
+  .btn {
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+}
