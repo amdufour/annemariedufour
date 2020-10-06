@@ -3,6 +3,15 @@
   .btn {
     margin-top: 2rem;
   }
+  @media (max-width: $lg) {
+    .col-quote {
+      order: 1;
+      margin-bottom: 40px;
+    }
+    .col-presentation {
+      order: 2;
+    }
+  }
   @media (max-width: $sm) {
     margin: 100px 0 120px;
   }
