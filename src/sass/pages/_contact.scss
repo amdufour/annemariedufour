@@ -78,4 +78,11 @@
       }
     }
   }
+
+  // Thank you page
+  &.thanks {
+    .contact-info .contact-form-section {
+      background-image: url(../assets/success.svg);
+    }
+  }
 }
