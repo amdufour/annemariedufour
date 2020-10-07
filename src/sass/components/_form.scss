@@ -25,9 +25,8 @@ form {
   }
   textarea {
     max-width: 600px;
+    padding-top: 40px;
     &::placeholder {
-      position: relative;
-      top: 35px;
       font-size: 1.6rem;
       line-height: 1;
       color: $greyDark;
@@ -50,6 +49,7 @@ form {
         @include easeSineOut;
       }
       textarea {
+        padding-top: 0;
         &::placeholder {
           opacity: 0;
           transition-property: opacity;
