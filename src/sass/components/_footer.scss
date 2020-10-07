@@ -39,23 +39,23 @@ footer {
     a {
       z-index: 1;
       color: $white;
-      box-shadow: rgba($tealPale, 0.5) 0 -5px 0 0 inset;
+      box-shadow: rgba($tealPale, 0.4) 0 -5px 0 0 inset;
       &:hover, &:focus {
-        box-shadow: rgba($tealPale, 0.5) 0 -16px 0 0 inset;
+        box-shadow: rgba($tealPale, 0.4) 0 -16px 0 0 inset;
       }
     }
     // Copyright
-    .copyright {
+    .copyright,
+    .privacy {
       text-align: right;
     }
     @media (max-width: $lg) {
       .credits,
-      .copyright {
+      .copyright,
+      .privacy {
+        margin-bottom: 10px;
         line-height: 1.2;
         text-align: center;
-      }
-      .credits {
-        margin-bottom: 10px;
       }
     }
   }

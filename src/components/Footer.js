@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import SocialLinks from './SocialLinks'
 import Logo from './Logo'
+import PrivacyStatement from '../pages/privacy-statement'
 
 const Footer = () => {
   const creationYear = 2020
@@ -24,6 +25,9 @@ const Footer = () => {
             </div>
             <div className="col-12 col-lg-6">
               <div className="copyright">&copy; {copyrightYears} Copyright Anne-Marie Dufour - All rights reserved</div>
+              <div className="privacy">
+                <Link to="/privacy-statement">Privacy Statement</Link>
+              </div>
             </div>
           </div>
         </div>

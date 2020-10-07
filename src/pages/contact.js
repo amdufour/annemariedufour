@@ -4,9 +4,9 @@ import ContactForm from '../components/ContactForm'
 import SocialLinks from '../components/SocialLinks'
 
 const Contact = () => {
-  return <Layout styleClass="contact-page">
+  return <Layout styleClass="header-with-gradient contact">
     <div className="contact-page">
-      <div className="contact-header">
+      <div className="small-header contact-header">
         <div className="logo-bg"></div>
         <div className="container">
           <h1>Contact me</h1>

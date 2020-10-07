@@ -9,14 +9,14 @@ button {
   padding: 15px 22px 13px;
   background-color: $white;
   font-weight: 600;
-  color: $teal;
+  color: $teal !important;
   background-color: $white;
   box-shadow: rgba($teal, 0.3) 0px -5px 0px 0px inset;
   border-radius: $radius;
   transition-property: all;
   @include easeSineIn;
   &:hover {
-    color: $white;
+    color: $white !important;
     box-shadow: rgba($teal, 1) 0 -53px 0 0 inset;
     @include easeSineOut;
   }
@@ -27,22 +27,22 @@ button {
 
   // Blue buttons
   &.btn-teal {
-    color: $white;
+    color: $white !important;
     background-color: $teal;
     box-shadow: rgba($white, 0.5) 0px -5px 0px 0px inset;
     &:hover {
-      color: $white;
+      color: $white !important;
       box-shadow: rgba($pink, 1) 0 -53px 0 0 inset;
     }
   }
 
   // Pink buttons
   &.btn-pink {
-    color: $white;
+    color: $white !important;
     background-color: $pink;
     box-shadow: rgba($white, 0.5) 0px -5px 0px 0px inset;
     &:hover {
-      color: $white;
+      color: $white !important;
       box-shadow: rgba($teal, 1) 0 -53px 0 0 inset;
     }
   }
@@ -50,7 +50,7 @@ button {
   // Pink on rollover
   &.btn-pink-rollover {
     &:hover {
-      color: $white;
+      color: $white !important;
       box-shadow: rgba($pink, 1) 0 -53px 0 0 inset;
     }
   }

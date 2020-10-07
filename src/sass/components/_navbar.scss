@@ -88,8 +88,7 @@
   }
 
   // Homepage
-  &.homepage,
-  &.contact-page {
+  &.header-with-gradient {
     position: absolute;
     top: 0;
     left: 0;
@@ -102,14 +101,19 @@
           background-color: $white;
         }
       }
-      .btn {
-        display: none;
-      }
     }
   }
   &.homepage {
     .logo-container a {
       display: none;
+    }
+  }
+  &.homepage,
+  &.contact {
+    .main-navigation {
+      .btn {
+        display: none;
+      }
     }
   }
 }
