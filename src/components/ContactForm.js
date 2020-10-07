@@ -6,41 +6,51 @@ class ContactForm extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      nameValue: '',
+      emailValue: '',
+      subjectValue: '',
       nameIsActive: false,
       emailIsActive: false,
       subjectIsActive: false,
       messageIsActive: false,
+      submitIsDisabled: true
     }
 
     this.updateActiveState = this.updateActiveState.bind(this)
+    this.testFormEnable = this.testFormEnable.bind(this)
     this.handleChange = this.handleChange.bind(this)
     this.handleBlur = this.handleBlur.bind(this)
   }
 
-  updateActiveState(name, active) {
+  updateActiveState(name, value, active) {
     switch (name) {
       case 'name':
-        this.setState({ nameIsActive: active });
+        this.setState({ nameIsActive: active, nameValue: value }, this.testFormEnable);
         break;
       case 'email':
-        this.setState({ emailIsActive: active });
+        this.setState({ emailIsActive: active, emailValue: value }, this.testFormEnable);
         break;
       case 'subject':
-        this.setState({ subjectIsActive: active });
+        this.setState({ subjectIsActive: active, subjectValue: value }, this.testFormEnable);
         break;
       case 'message':
-        this.setState({ messageIsActive: active });
+        this.setState({ messageIsActive: active }, this.testFormEnable);
         break;
     }
   }
 
+  testFormEnable() {
+    const isDisabled = (this.state.nameValue !== '' && this.state.emailValue !== '' && this.state.subjectValue !== '') ? false : true;
+    this.setState({ submitIsDisabled: isDisabled })
+  }
+
   handleChange(event) {
-    this.updateActiveState(event.target.name, true);
+    this.updateActiveState(event.target.name, event.target.value, true);
   }
 
   handleBlur(event) {
     const fieldHasContent = event.target.value !== '' ? true : false;
-    this.updateActiveState(event.target.name, fieldHasContent);
+    this.updateActiveState(event.target.name, event.target.value, fieldHasContent);
   }
 
   render() {
@@ -67,7 +77,10 @@ class ContactForm extends React.Component {
                     onChange={this.handleChange} onFocus={this.handleChange} onBlur={this.handleBlur}
                     placeholder="I'd love to know more about the type of project that you have in mind!" />
         </div>
-        <button className="btn btn-teal" type="submit">Send message</button>
+        <button className="btn btn-teal" type="submit"
+                disabled={this.state.submitIsDisabled}>
+          Send message
+        </button>
       </form>
     )
   }
