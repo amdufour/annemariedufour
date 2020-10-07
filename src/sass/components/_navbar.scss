@@ -88,15 +88,13 @@
   }
 
   // Homepage
-  &.homepage {
+  &.homepage,
+  &.contact-page {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     background: transparent;
-    .logo-container a {
-      display: none;
-    }
     .main-navigation {
       a {
         color: $white;
@@ -107,6 +105,11 @@
       .btn {
         display: none;
       }
+    }
+  }
+  &.homepage {
+    .logo-container a {
+      display: none;
     }
   }
 }

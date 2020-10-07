@@ -1,0 +1,28 @@
+.contact-page {
+  // Header
+  .contact-header {
+    position: relative;
+    height: 500px;
+    padding-top: 150px;
+    background: $teal;
+    background: linear-gradient(120deg, rgba($teal,1) 0%, rgba($yellow,1) 100%);
+    h1 {
+      position: relative;
+      z-index: 1;
+    }
+    @media (max-width: $sm) {
+      height: 300px;
+      padding-top: 90px;
+    }
+  }
+
+  // Contact info
+  .contact-info {
+    margin-top: 160px;
+    padding: 50px 0 50px 160px;
+    border-left: 4px solid $text;
+    h2 {
+      margin-top: 0;
+    }
+  }
+}

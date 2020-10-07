@@ -21,7 +21,7 @@ const HomeHero = () => {
           </div>
         </div>
       </div>
-      <div className="homehero-bottom-triangles"></div>
+      <div className="header-bottom-triangles"></div>
     </div>
   )
 }
