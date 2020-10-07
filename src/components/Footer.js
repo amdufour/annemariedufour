@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import SocialLinks from './SocialLinks'
 import Logo from './Logo'
 
@@ -13,7 +14,7 @@ const Footer = () => {
         <div className="footer-top">
           <Logo />
           <h2>Ready to bring your data to life?</h2>
-          <a className="btn btn-white" href="/">Let's get in touch!</a>
+          <Link className="btn btn-white" to="/contact">Let's get in touch!</Link>
           <SocialLinks />
         </div>
         <div className="footer-bottom">

@@ -9,7 +9,7 @@
   .hamburger-box {
     position: relative;
     z-index: 101;
-    top: 3px;
+    top: 5px;
     display: inline-block;
     width: 30px;
     height: 24px;
@@ -101,6 +101,7 @@
             margin: 80px auto 0;
             min-width: 130px;
             font-weight: 700;
+            color: $teal;
           }
           &:before {
             display: none;

@@ -17,7 +17,7 @@ const HomeHero = () => {
             <div>that are <span className="rotating-text rotating-text-secondary-1">Insightful</span> yet <span className="rotating-text rotating-text-secondary-2">Creative</span></div>
           </div>
           <div className="intro-section">
-            <Link class="btn" to="">Let's get in touch!</Link>
+            <Link class="btn" to="/contact">Let's get in touch!</Link>
           </div>
         </div>
       </div>

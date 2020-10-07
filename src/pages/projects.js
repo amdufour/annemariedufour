@@ -7,7 +7,7 @@ const projectIds = [1, 2, 3, 4]
 const Projects = () => {
   return (
     <Layout>
-      <section className="page-projects">
+      <div className="page-projects">
         <div className="page-header">
           <div className="container">
             <h1>My work</h1>
@@ -26,7 +26,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </Layout>
   )
 }

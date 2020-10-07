@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 const Error = () => {
   return (
     <Layout>
-      <main className="error-page">
+      <section className="error-page">
         <div className="container">
           <div className="error-container">
             <h1>Oops! It's a dead end...</h1>
@@ -17,7 +17,7 @@ const Error = () => {
             <Link to="/projects" className="btn btn-teal">Explore my projects</Link>
           </div>
         </div>
-      </main>
+      </section>
     </Layout>
   )
 }

@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <Layout>
-      <section className="page-about">
+      <div className="page-about">
         <div className="page-header">
           <div className="container">
             <h1>About me</h1>
@@ -93,11 +93,11 @@ const About = () => {
                 <div className="list">Collaborating with teams worldwide</div>
               </div>
             </div>
-            <a className="btn btn-teal contact" href="/">Contact me</a>
+            <Link className="btn btn-teal contact" to="/contact">Contact me</Link>
           </div>
           <CtaPortfolio />
         </div>
-      </section>
+      </div>
     </Layout>
   )
 }
