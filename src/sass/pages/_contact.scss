@@ -19,10 +19,63 @@
   // Contact info
   .contact-info {
     margin-top: 160px;
-    padding: 50px 0 50px 160px;
     border-left: 4px solid $text;
     h2 {
       margin-top: 0;
+    }
+    .contact-form-section,
+    .contact-connect-section {
+      padding: 50px 0 50px 140px;
+      background-repeat: no-repeat;
+      background-size: 80px auto;
+      background-position: 50px 30px;
+    }
+    .contact-form,
+    .contact-connect {
+      margin-left: 6px;
+    }
+    @media (max-width: $sm) {
+      border-left: none;
+      .contact-form-section,
+      .contact-connect-section {
+        padding-left: 0;
+        background-position: 0 0;
+      }
+      .contact-form-section {
+        padding-top: 90px;
+      }
+      .contact-connect-section {
+        padding-top: 70px;
+      }
+    }
+  }
+
+  // Contact form section
+  .contact-form-section {
+    background-image: url(../assets/mail.svg);
+  }
+
+  // Connect section
+  .contact-connect-section {
+    margin-top: 70px;
+    background-image: url(../assets/communication.svg);
+    .social-links {
+      margin-top: 20px;
+      text-align: left;
+      a {
+        .logo-instagram g,
+        .logo-behance g,
+        .logo-linkedin path {
+          fill: $teal;
+        }
+        &:hover, &:focus {
+          .logo-instagram g,
+          .logo-behance g,
+          .logo-linkedin path {
+            fill: $pink;
+          }
+        }
+      }
     }
   }
 }

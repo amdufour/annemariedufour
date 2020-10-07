@@ -1,3 +1,9 @@
+button {
+  border: 0;
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
 .btn {
   display: inline-block;
   padding: 15px 22px 13px;

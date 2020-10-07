@@ -1,5 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import ContactForm from '../components/ContactForm'
+import SocialLinks from '../components/SocialLinks'
 
 const Contact = () => {
   return <Layout styleClass="contact-page">
@@ -17,12 +19,14 @@ const Contact = () => {
             <section className="contact-form-section">
               <h2>Ready to discuss your next project?</h2>
               <div className="contact-form">
-              
+                <ContactForm />
               </div>
             </section>
             <section className="contact-connect-section">
-              <h2>Let’s get in touch!</h2>
-              <div className="contact-connect"></div>
+              <h2>Let’s connect!</h2>
+              <div className="contact-connect">
+                <SocialLinks />
+              </div>
             </section>
           </div>
         </div>

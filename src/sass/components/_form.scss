@@ -1,0 +1,81 @@
+// Reset
+input,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+// Custom styles
+form {
+  input,
+  textarea {
+    width: 100% !important;
+    line-height: 36px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $text;
+  }
+  input {
+    max-width: 350px;
+    height: 36px;
+  }
+  textarea {
+    max-width: 600px;
+    &::placeholder {
+      position: relative;
+      top: 35px;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: $greyDark;
+    }
+  }
+  .form-item {
+    position: relative;
+    margin-bottom: 50px;
+    label {
+      display: block;
+      position: absolute;
+      transition-property: all;
+      @include easeSineIn;
+    }
+    &.active {
+      label {
+        top: -16px;
+        font-size: 16px;
+        color: $greyDark;
+        @include easeSineOut;
+      }
+      textarea {
+        &::placeholder {
+          opacity: 0;
+          transition-property: opacity;
+          @include easeSineOut;
+        }
+      }
+    }
+    &.form-item-input {
+      label {
+        top: 10px;
+      }
+      &.active {
+        label {
+          top: -16px;
+        }
+      }
+    }
+    &.form-item-text {
+      label {
+        top: 10px;
+      }
+      &.active {
+        label {
+          top: -16px;
+        }
+      }
+    }
+  }
+}
