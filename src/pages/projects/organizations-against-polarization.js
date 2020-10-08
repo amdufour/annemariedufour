@@ -224,7 +224,7 @@ const OrganizationsAgainstPolarization = () => {
                        loop={false}
                        controls={true} />
               </div>
-              <h2>Responsive considerations</h2>
+              {/* <h2>Responsive considerations</h2> */}
               <p></p>
               <p></p>
               <div className="project-bottom-link-container">
