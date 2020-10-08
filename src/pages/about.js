@@ -20,12 +20,14 @@ const About = () => {
   const aboutImage = useStaticQuery(getImage)
 
   return (
-    <Layout>
-      <div className="page-about">
-        <div className="page-header">
+    <Layout styleClass="header-with-gradient privacy">
+      <div className="privacy-page">
+        <div className="small-header">
+          <div className="logo-bg"></div>
           <div className="container">
             <h1>About me</h1>
           </div>
+          <div className="header-bottom-triangles"></div>
         </div>
         <div className="page-content">
           <div className="container">

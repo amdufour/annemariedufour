@@ -6,12 +6,14 @@ const projectIds = [1, 2, 3, 4]
 
 const Projects = () => {
   return (
-    <Layout>
-      <div className="page-projects">
-        <div className="page-header">
+    <Layout styleClass="header-with-gradient privacy">
+      <div className="privacy-page">
+        <div className="small-header">
+          <div className="logo-bg"></div>
           <div className="container">
             <h1>My work</h1>
           </div>
+          <div className="header-bottom-triangles"></div>
         </div>
         <div className="page-content projects">
           <div className="container">
