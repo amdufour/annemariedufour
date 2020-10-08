@@ -38,6 +38,9 @@
     }
     .project {
       color: $white;
+      .project-thumbnail {
+        border-color: $white;
+      }
     }
   }
 }

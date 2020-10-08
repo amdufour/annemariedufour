@@ -25,6 +25,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    border: 2px solid $teal;
     border-radius: $radius;
     &:after {
       content: '';
@@ -49,7 +50,7 @@
       opacity: 0;
     }
   }
-  &.project-nobel .project-thumbnail { background-image: url(../assets/project-nobel.jpg); }
+  &.project-nobel .project-thumbnail { background-image: url(../assets/project-nobel.svg); }
   &.project-foodprint .project-thumbnail { background-image: url(../assets/project-foodprint.svg); }
   &.project-music .project-thumbnail {
     background-color: #000;
@@ -85,5 +86,8 @@
 .home-projects {
   .project {
     color: $white;
+    .project-thumbnail {
+      border-color: $white;
+    }
   }
 }
