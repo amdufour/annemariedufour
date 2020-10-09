@@ -32,7 +32,7 @@ const About = () => {
         <div className="page-content">
           <div className="container">
             <h3>Hi there, welcome to my site!</h3>
-            <p>Now that you’ve reached my about page, you probably already know that I am a consultant in creative Data Visualizations Design and Develop. If you came here to confirm if my soft skills, technical expertise, and main tools match the project you have in mind, the button below will bring you precisely to the right place.</p>
+            <p>Now that you’ve reached my about page, you probably already know that I am a consultant in Creative Data Visualizations Design and Develop. If you came here to confirm if my soft skills, technical expertise, and main tools match the project you have in mind, the button below will bring you precisely to the right place.</p>
             <Link className="btn btn-teal btn-skills" to="#quote-kian">Learn more about my skills</Link>
             <p>If you want to learn more about me and my background, keep reading!</p>
             
