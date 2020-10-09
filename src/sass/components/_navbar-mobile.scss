@@ -1,6 +1,7 @@
 .navbar-mobile {
   height: 60px;
   .logo-container a .logo {
+    width: 44px;
     height: 40px;
   }
 
@@ -9,7 +10,8 @@
   .hamburger-box {
     position: relative;
     z-index: 101;
-    top: 5px;
+    top: 0;
+    right: 0;
     display: inline-block;
     width: 30px;
     height: 24px;
