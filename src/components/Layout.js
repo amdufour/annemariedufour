@@ -4,27 +4,28 @@ import MobileMenu from './MobileMenu'
 import Footer from './Footer'
 import '../sass/main.scss'
 
-// Add class if user is navigating with keyboard
-function handleFirstTab(e) {
-  if (e.keyCode === 9) { // the "I am a keyboard user" key
-      document.body.classList.add('user-is-tabbing');
-      window.removeEventListener('keydown', handleFirstTab);
-  }
-}
-window.addEventListener('keydown', handleFirstTab);
-
 class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isMobile: false
     }
+    this.handleFirstTab = this.handleFirstTab.bind(this);
     this.updateDimensions = this.updateDimensions.bind(this);
   }
 
   componentDidMount() {
+    window.addEventListener('keydown', this.handleFirstTab);
+
     this.updateDimensions();
     window.addEventListener('resize', this.updateDimensions);
+  }
+
+  handleFirstTab(e) {
+    if (e.keyCode === 9) { // the "I am a keyboard user" key
+        document.body.classList.add('user-is-tabbing');
+        window.removeEventListener('keydown', this.handleFirstTab);
+    }
   }
 
   updateDimensions() {
