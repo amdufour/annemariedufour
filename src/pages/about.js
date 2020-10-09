@@ -21,7 +21,7 @@ const About = () => {
 
   return (
     <Layout styleClass="header-with-gradient privacy">
-      <div className="privacy-page">
+      <div className="page-about">
         <div className="small-header">
           <div className="logo-bg"></div>
           <div className="container">
