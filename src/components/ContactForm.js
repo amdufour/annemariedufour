@@ -74,7 +74,7 @@ class ContactForm extends React.Component {
                  onChange={this.handleChange} onFocus={this.handleChange} onBlur={this.handleBlur} />
         </div>
         <div className={`form-item form-item-text ${this.state.messageIsActive ? 'active' : ''}`}>
-          <label htmlFor="form-message">Message</label>
+          <label htmlFor="form-message">Message <span className="optional">- Optional</span></label>
           <textarea type="text" id="form-message" name="message"
                     onChange={this.handleChange} onFocus={this.handleChange} onBlur={this.handleBlur}
                     placeholder="I'd love to know more about the type of project that you have in mind!" />
