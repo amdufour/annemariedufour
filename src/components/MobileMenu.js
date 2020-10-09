@@ -10,6 +10,8 @@ class MobileMenu extends React.Component {
     this.state = {
       isActive: false
     }
+
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
