@@ -11,10 +11,23 @@ footer {
   // Top section
   .footer-top {
     text-align: center;
+    .home-link {
+      box-shadow: none;
+      span {
+        display: block;
+        text-indent: -9000em;
+      }
+    }
     .logo {
       height: 90px;
       path {
         stroke-width: 1;
+        transition-property: stroke;
+        @include easeSineIn;
+        &:hover, &:focus {
+          stroke: $yellow;
+          @include easeSineOut;
+        }
       }
     }
     h2 {

@@ -12,7 +12,10 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="footer-top">
-          <Logo />
+          <Link className="home-link" to="/">
+            <span>Go back to homepage</span>
+            <Logo />
+          </Link>
           <h2>Ready to bring your data to life?</h2>
           <Link className="btn btn-white" to="/contact">Let's get in touch!</Link>
           <SocialLinks />
