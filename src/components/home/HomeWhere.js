@@ -6,20 +6,20 @@ const HomeWhere = () => {
       <div className="container">
         <h2>Sounds interesting! But where can we use Data Visualizations?</h2>
         <p>When thinking about Data Visualizations, the first images that come to my mind are the stunning graphics in National Geographic articles. But when it comes to where we can use visualizations, the sky is the limit! Data visualization support options are endless: from physical installations to fashion to postcards (take a look <a href="http://giorgialupi.com/dear-data" target="_blank" rel="noreferrer">here</a> if you are wondering what I mean by postcards).</p>
-        <p>The two main supports for Data Visualizations are Digital and Printed. We often use them for expository visualizations, which have a fixed dataset. On the other hand, Dashboards are an exploratory type of visualization and deal with an ever-evolving stream of data.</p>
+        <p>The two main supports for creative Data Visualizations are Digital and Print. We often use them for expository visualizations, which have a fixed dataset. Occasionally, creative digital visualizations will have an ever-evolving stream of data and will be exploratory.</p>
         <div className="row supports">
-          <div className="col-12 col-sm-6 col-md-4 support support-digital">
+          <div className="col-12 col-sm-6 support support-digital">
             <h3>Digital supports</h3>
-            <p>To explore a subject in depth thanks to carefully crafted interactions.</p>
+            <p>Web pages or applications are the support of choice to explore a subject in depth. Thanks to carefully crafted interactions, the user can reveal information, zoom on a specific section, or even hear music.</p>
           </div>
-          <div className="col-12 col-sm-6 col-md-4 support support-print">
+          <div className="col-12 col-sm-6 support support-print">
             <h3>Printed publications</h3>
-            <p>To add depth and context to articles, impress stakeholders in reports, and raise awareness on posters.</p>
+            <p>Unique visualizations add depth and context to any article, supporting the text's conclusions. They create engagement and raise awareness on posters and pamphlets or impress stakeholders on reports.</p>
           </div>
-          <div className="col-12 col-sm-6 col-md-4 support support-dashboard">
+          {/* <div className="col-12 col-sm-6 col-md-4 support support-dashboard">
             <h3>Dashboards</h3>
             <p>To follow critical data in real-time and make early informed decisions.</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
