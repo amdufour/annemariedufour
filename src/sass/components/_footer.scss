@@ -17,14 +17,16 @@ footer {
         display: block;
         text-indent: -9000em;
       }
-    }
-    .logo {
-      height: 90px;
-      path {
-        stroke-width: 1;
-        transition-property: stroke;
-        @include easeSineIn;
-        &:hover, &:focus {
+      .logo {
+        height: 90px;
+        path {
+          stroke-width: 1;
+          transition-property: stroke;
+          @include easeSineIn;
+        }
+      }
+      &:hover, &:focus {
+        .logo path {
           stroke: $yellow;
           @include easeSineOut;
         }
