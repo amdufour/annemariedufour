@@ -17,6 +17,11 @@
     text-align: right;
     background: none;
     border: none;
+    // Hide text
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    
     cursor: pointer;
     .hamburger-inner,
     .hamburger-inner::before,

@@ -36,6 +36,7 @@ class MobileMenu extends React.Component {
                         className="hamburger-box"
                         onClick={() => this.handleClick()}>
                   <div className="hamburger-inner"></div>
+                  {this.state.isActive ? 'Close the menu' : 'Open the menu'}
                 </button>
               </div>
             </div>
