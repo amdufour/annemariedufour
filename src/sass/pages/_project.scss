@@ -52,9 +52,9 @@
       margin-bottom: 20px;
       a {
         color: $white;
-        box-shadow: rgba($pink, 0.3) 0 -5px 0 0 inset;
+        box-shadow: $tealPale 0 -5px 0 0 inset;
         &:hover, &:focus {
-          box-shadow: rgba($pink, 0.3) 0 -18px 0 0 inset;
+          box-shadow: $tealPale 0 -18px 0 0 inset;
         }
       }
     }
