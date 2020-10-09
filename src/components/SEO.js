@@ -17,8 +17,9 @@ const query = graphql`
 const SEO = ({ title, description }) => {
   const {site} = useStaticQuery(query);
   const {siteDescription, siteTitle} = site.siteMetadata;
+  const pageTitle = title === undefined ? siteTitle : `${title} | ${siteTitle}`;
 
-  return <Helmet htmlAttributes={{lang: "en"}} title={`${title} | ${siteTitle}`} >
+  return <Helmet htmlAttributes={{lang: "en"}} title={pageTitle} >
     <meta name="description" content={description || siteDescription} />
   </Helmet>
 }

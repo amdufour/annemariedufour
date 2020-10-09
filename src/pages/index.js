@@ -11,7 +11,7 @@ import HomeWho from '../components/home/HomeWho'
 export default function Home() {
   return (
     <Layout styleClass="header-with-gradient homepage">
-      <SEO title="Home" />
+      <SEO />
       <HomeHero />
       <div className="home-content">
         <HomeWhy />
