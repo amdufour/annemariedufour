@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'gatsby'
 import SocialLinks from './SocialLinks'
 import Logo from './Logo'
-import PrivacyStatement from '../pages/privacy-statement'
 
 const Footer = () => {
   const creationYear = 2020

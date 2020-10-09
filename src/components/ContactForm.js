@@ -36,6 +36,8 @@ class ContactForm extends React.Component {
       case 'message':
         this.setState({ messageIsActive: active }, this.testFormEnable);
         break;
+      default:
+        break;
     }
   }
 
