@@ -35,7 +35,7 @@ const projectsInfo = [
     title: 'A century of Nobel prizes',
     readmore: 'Explore the project',
     support: 'digital',
-    link: '/',
+    link: 'https://amdufour.github.io/nobels/',
     external: true
   },
 ]
