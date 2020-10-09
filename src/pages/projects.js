@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <Layout styleClass="header-with-gradient privacy">
       <SEO title="Projects" />
-      <div className="privacy-page">
+      <div className="projects-page">
         <div className="small-header">
           <div className="logo-bg"></div>
           <div className="container">
