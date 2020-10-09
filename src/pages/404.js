@@ -1,10 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import { Link } from 'gatsby'
 
 const Error = () => {
   return (
     <Layout>
+      <SEO title="Error" />
       <section className="error-page">
         <div className="container">
           <div className="error-container">

@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../../components/Layout'
+import SEO from '../../components/SEO'
 import CodeBlock from '../../components/CodeBlock'
 import SeeMoreProjects from '../../components/SeeMoreProjects'
 import { graphql, useStaticQuery } from 'gatsby'
@@ -63,6 +64,7 @@ const OrganizationsAgainstPolarization = () => {
 
   return (
     <Layout>
+      <SEO title="Organizations against polarization" />
       <section className="page-project page-project-organizations-against-polarization">
 
         {/* Project header */}

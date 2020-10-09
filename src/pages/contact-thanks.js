@@ -1,9 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import SocialLinks from '../components/SocialLinks'
 
 const Contact = () => {
   return <Layout styleClass="contact-page">
+    <SEO title="Thank you" />
     <div className="contact-page thanks">
       <div className="contact-header">
         <div className="logo-bg"></div>

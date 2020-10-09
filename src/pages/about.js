@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
 import Image from 'gatsby-image'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import CtaPortfolio from '../components/CtaPortfolio'
 
 const getImage = graphql`
@@ -21,6 +22,7 @@ const About = () => {
 
   return (
     <Layout styleClass="header-with-gradient privacy">
+      <SEO title="About" />
       <div className="page-about">
         <div className="small-header">
           <div className="logo-bg"></div>

@@ -1,10 +1,12 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import { Link } from 'gatsby'
 
 const PrivacyStatement = () => {
   return (
     <Layout styleClass="header-with-gradient privacy">
+      <SEO title="Privacy Statement" />
       <div className="privacy-page">
         <div className="small-header">
           <div className="logo-bg"></div>

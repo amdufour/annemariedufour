@@ -7,7 +7,11 @@
 const postCssPlugins = require('./postcss-config.js');
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Anne-Marie Dufour - Data Visualization Design and Development`,
+    description: `Consultant in Creative Data Visualizations Design and Development. I mainly work with d3.js and deliver printed and digital products.`,
+    author: `Anne-Marie Dufour`,
+  },
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -42,5 +46,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-react-helmet`,
   ],
 }

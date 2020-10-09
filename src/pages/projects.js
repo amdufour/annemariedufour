@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import ProjectThumbnail from '../constants/projectsThumbnails'
 
 const projectIds = [1, 2, 3, 4]
@@ -7,6 +8,7 @@ const projectIds = [1, 2, 3, 4]
 const Projects = () => {
   return (
     <Layout styleClass="header-with-gradient privacy">
+      <SEO title="Projects" />
       <div className="privacy-page">
         <div className="small-header">
           <div className="logo-bg"></div>
