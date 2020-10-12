@@ -1,6 +1,7 @@
 .homehero {
   position: relative;
   height: calc(100vh + 80px);
+  min-height: 800px;
   padding-top: 270px;
   background: $teal;
   background: linear-gradient(120deg, rgba($teal,1) 0%, rgba($yellow,1) 100%);
@@ -8,12 +9,25 @@
     position: relative;
     z-index: 1;
   }
+  @media (max-height: 900px) {
+    padding-top: 200px;
+  }
   @media (max-width: $xl) {
     height: calc(100vh + 38px);
-    padding-top: 200px;
+  }
+  @media (max-width: $lg) {
+    max-height: 1000px;
+  }
+  @media (max-width: $md) {
+    min-height: 0;
+    max-height: 900px;
+  }
+  @media (max-width: 700px) {
+    max-height: 800px;
   }
   @media (max-width: $sm) {
     height: calc(100vh + 10px);
+    max-height: 700px;
     padding-top: 150px;
   }
 
@@ -29,7 +43,7 @@
         color: $white;
       }
     }
-    @media (max-width: $sm) {
+    @media (max-width: 650px) {
       font-size: 3rem;
     }
   }
@@ -52,10 +66,13 @@
       margin-top: 12px;
       font-size: 1.8rem;
     }
-    @media (max-width: $xl) {
+    @media (max-height: 900px), (max-width: $md) {
       margin-top: 100px;
     }
-    @media (max-width: $sm) {
+    @media (max-height: 750px) {
+      margin-top: 80px;
+    }
+    @media (max-width: 650px) {
       margin-top: 80px;
       font-size: 1.8rem;
       .intro-section {
