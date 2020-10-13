@@ -23,7 +23,7 @@ const projectsInfo = [
   {
     id: 3,
     class: 'project-foodprint',
-    title: 'Daily Foodprint',
+    title: 'Your Daily Foodprint',
     readmore: 'Explore the project',
     support: 'digital',
     link: 'https://amdufour.github.io/your-daily-foodprint/',
