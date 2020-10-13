@@ -73,7 +73,7 @@ const About = () => {
             <p>Here’s an overview of my stack. These are the tools I am the most comfortable and experienced using, but I’m always keeping an eye open for the tools that could best serve my clients and projects.</p>
             <div className="skills">
               <div className="skill skill-data">
-                <h3>Data manipulation and Analysis</h3>
+                <h3>Data Manipulation and Analysis</h3>
                 <div className="list">SQL, Python</div>
               </div>
               <div className="skill skill-design">
