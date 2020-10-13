@@ -79,12 +79,22 @@
 
   // Side quote
   &.quote-side {
+    position: relative;
     padding: 70px 30px 30px;
-    background-image: url(../assets/quote-left.svg);
-    background-repeat: no-repeat;
-    background-size: auto 90px;
-    background-position: -8px -20px;
     border-radius: $radius;
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: -15px;
+      left: -6px;
+      width: 112px;
+      height: 90px;
+      background-image: url(../assets/quote-left.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 0 0;
+    }
     .quote-content {
       font-size: 1.6rem;
     }
