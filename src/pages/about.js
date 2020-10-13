@@ -82,7 +82,7 @@ const About = () => {
               </div>
               <div className="skill skill-development">
                 <h3>Development</h3>
-                <div className="list">JavaScript, D3.js, React.js, GatsbyJS, Angular, GSAP, CSS3, SASS, HTML5</div>
+                <div className="list">JavaScript, D3.js, React.js, GatsbyJS, Angular, GSAP, Git, CSS3, SASS, HTML5</div>
               </div>
             </div>
             <h2>Other useful information</h2>
