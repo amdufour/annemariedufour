@@ -1,5 +1,5 @@
 .home-who {
-  margin: 180px 0;
+  margin: 600px 0 200px;
   h3 {
     margin-top: 0;
   }
@@ -7,6 +7,7 @@
     margin-top: 2rem;
   }
   @media (max-width: $lg) {
+    margin: 450px 0 120px;
     .col-quote {
       order: 1;
       margin-bottom: 40px;
@@ -16,6 +17,6 @@
     }
   }
   @media (max-width: $sm) {
-    margin: 100px 0 120px;
+    margin: 300px 0 100px;
   }
 }

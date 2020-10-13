@@ -35,5 +35,11 @@
   h2 {
     padding-top: 50px;
     color: $white;
+    @media (max-width: $lg) {
+      padding-top: 100px;
+    }
+    @media (max-width: $md) {
+      padding-top: 150px;
+    }
   }
 }
