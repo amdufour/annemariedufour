@@ -10,7 +10,7 @@ import HomeWho from '../components/home/HomeWho'
 
 export default function Home() {
   return (
-    <Layout styleClass="header-with-gradient homepage">
+    <Layout styleClass="header-with-gradient">
       <SEO />
       <HomeHero />
       <div className="home-content">
