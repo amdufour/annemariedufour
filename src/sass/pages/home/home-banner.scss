@@ -1,3 +1,43 @@
+.home-banner-container {
+  position: relative;
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  &:before {
+    top: 0;
+    border-width: 0 100vw 60px 0;
+    border-color: transparent $white transparent transparent;
+  }
+  &:after {
+    bottom: 0;
+    border-width: 40px 0 0 100vw;
+    border-color: transparent transparent transparent $white;
+  }
+  @media (max-width: $md) {
+    &:before {
+      border-bottom-width: 40px;
+    }
+    &:after {
+      border-top-width: 30px;
+    }
+  }
+  @media (max-width: $sm) {
+    &:before {
+      border-bottom-width: 30px;
+    }
+    &:after {
+      border-top-width: 20px;
+    }
+  }
+}
 .home-inner-container {
   height: 500px;
   @media (max-width: $md) {

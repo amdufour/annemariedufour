@@ -18,12 +18,14 @@ const HomeSpotifyBanner = () => {
   const img = useStaticQuery(getImage)
   
   return (
-    <Parallax className="home-banner"
-              bgImage={img.file.childImageSharp.fluid.src}
-              bgImageAlt="Visualization of top 100 songs streamed on Spotify"
-              strength={400}>
-      <div className="home-inner-container"></div>
-    </Parallax>
+    <div className="home-banner-container">
+      <Parallax className="home-banner"
+                bgImage={img.file.childImageSharp.fluid.src}
+                bgImageAlt="Visualization of top 100 songs streamed on Spotify"
+                strength={400}>
+        <div className="home-inner-container"></div>
+      </Parallax>
+    </div>
   )
 }
 
