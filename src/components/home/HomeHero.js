@@ -7,8 +7,7 @@ const HomeHero = () => {
       <div className="logo-bg"></div>
       <div className="container">
         <div className="tagline">
-          <div>Carefully crafted <span className="em">Data Stories</span></div>
-          <div className="rotating-text rotating-text-main">leave <span className="em">a Durable Imprint</span></div>
+          <div>Delightfully crafted Data Stories <span className="rotating-text rotating-text-main">leave <span className="em">a Durable Imprint</span></span></div>
         </div>
         <div className="introduction">
           <div className="intro-section"><span className="salutation">Hi!</span>I'm Anne-Marie</div>
