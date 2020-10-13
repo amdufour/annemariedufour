@@ -1,13 +1,39 @@
 .home-projects {
   position: relative;
-  padding: 350px 0 150px;
-  background-image: url(../assets/projects-bg.svg);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
+  margin: 37% 0 35%;
+  background: rgb(50,178,186);
+  background: linear-gradient(180deg, rgba(50,178,186,1) 0%, rgba(17,166,180,1) 100%);
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+  }
+  &:before {
+    bottom: 100%;
+    padding-bottom: 32%;
+    background-image: url(../assets/projects-bg-top.svg);
+    background-position: 0 0;
+    background-size: 100% auto;
+  }
+  &:after {
+    top: 100%;
+    padding-bottom: 85%;
+    background-image: url(../assets/projects-bg-bottom.svg);
+    background-position: 0 0;
+    background-size: 100% auto;
+  }
 
+  .container {
+    position: relative;
+    z-index: 1;
+    top: -100px;
+  }
   h2 {
-    text-align: center;
+    padding-top: 50px;
     color: $white;
   }
 }

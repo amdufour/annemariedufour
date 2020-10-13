@@ -49,7 +49,7 @@ const ProjectThumbnail = ({projectId}) => {
           to={project.link}
           target={project.external ? '_blank' : '_self'}>
       <div className="project-thumbnail">
-        <div className="more">{project.readmore}</div>
+        <div className="more"><span className="more-text">{project.readmore}</span></div>
       </div>
       <div className="project-title">{project.title}</div>
       <div className="project-support">{project.support}</div>

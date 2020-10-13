@@ -14,14 +14,18 @@
       &:after,
       .more {
         opacity: 1;
-        transition-property: opacity;
+        transition-property: all;
         @include easeSineOut;
+        transition-duration: 300ms;
+      }
+      .more {
+        height: 100px;
       }
     }
   }
   .project-thumbnail {
     position: relative;
-    padding-top: 100%;
+    padding-top: 62%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -34,20 +38,42 @@
       left: 0;
       right: 0;
       height: 100%;
-      background: linear-gradient(0deg, rgba($text,0.85) 0%, rgba($text,0) 100%);
+      background: rgba($text, 0.6);
       opacity: 0;
+      transition-property: all;
+      @include easeSineIn;
     }
     .more {
       position: absolute;
       z-index: 1;
-      bottom: 15px;
-      right: 20px;
-      padding-right: 30px;
-      color: $white;
-      background-image: url(../assets/arrow-right.svg);
-      background-repeat: no-repeat;
-      background-position: right 0 top 6px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 0;
+      overflow: hidden;
       opacity: 0;
+      transition-property: all;
+      @include easeSineIn;
+      .more-text {
+        position: absolute;
+        bottom: 12px;
+        right: 20px;
+        font-weight: 600;
+        color: $white;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        margin-top: -300px;
+        border-style: solid;
+        border-width: 0 0 92px 500px;
+        border-color: transparent transparent $teal transparent;
+      }
     }
   }
   &.project-nobel .project-thumbnail { background-image: url(../assets/project-nobel.svg); }
@@ -55,7 +81,7 @@
   &.project-music .project-thumbnail {
     background-color: #000;
     background-image: url(../assets/projects/spotify-hits/project-music.svg);
-    background-size: 250px auto;
+    background-size: 300px auto;
     background-position: center;
     @media (max-width: $md) {
       background-size: 200px auto;

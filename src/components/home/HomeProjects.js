@@ -7,7 +7,7 @@ const HomeProjects = () => {
   return (
     <div id="portfolio" className="home-projects projects">
       <div className="container">
-        <h2>Selected projects</h2>
+        <h2>Check out my work</h2>
         <div className="row justify-content-center">
           {projectIds.map((id, index) => {
             return (

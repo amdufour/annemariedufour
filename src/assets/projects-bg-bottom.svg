@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="563" viewBox="0 0 1440 563">
+  <defs>
+    <rect id="projects-bg-bottom-a" width="1440" height="563"/>
+    <linearGradient id="projects-bg-bottom-b" x1="54.814%" x2="108.65%" y1="-36.247%" y2="76.88%">
+      <stop offset="0%" stop-color="#11A6B4"/>
+      <stop offset="100%" stop-color="#D9ECC7"/>
+    </linearGradient>
+    <linearGradient id="projects-bg-bottom-d" x1="59.091%" x2="91.382%" y1="-20.833%" y2="67.936%">
+      <stop offset="0%" stop-color="#11A6B4"/>
+      <stop offset="100%" stop-color="#D9ECC7"/>
+    </linearGradient>
+    <linearGradient id="projects-bg-bottom-e" x1="69.896%" x2="4.625%" y1="41.115%" y2="56.641%">
+      <stop offset="0%" stop-color="#11A6B4"/>
+      <stop offset="100%" stop-color="#D9ECC7"/>
+    </linearGradient>
+    <linearGradient id="projects-bg-bottom-f" x1="76.544%" x2="76.55%" y1="5.367%" y2="100%">
+      <stop offset="0%" stop-color="#11A6B4"/>
+      <stop offset="76.619%" stop-color="#11A6B4"/>
+      <stop offset="100%" stop-color="#D9ECC7" stop-opacity=".6"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <mask id="projects-bg-bottom-c" fill="#fff">
+      <use xlink:href="#projects-bg-bottom-a"/>
+    </mask>
+    <polygon fill="url(#projects-bg-bottom-b)" points="0 -1374 1440 -1218.017 1440 303 0 201.151" mask="url(#projects-bg-bottom-c)" opacity=".5"/>
+    <polygon fill="url(#projects-bg-bottom-d)" points="0 -1500 1440 -986 1440 521 0 46.917" mask="url(#projects-bg-bottom-c)" opacity=".5"/>
+    <polygon fill="url(#projects-bg-bottom-e)" points="1440 0 1440 563 0 0" mask="url(#projects-bg-bottom-c)" opacity=".5"/>
+    <polygon fill="url(#projects-bg-bottom-f)" points="0 -937.844 1440 -1374 1440 444 0 1.357" mask="url(#projects-bg-bottom-c)"/>
+  </g>
+</svg>
