@@ -230,7 +230,7 @@ const OrganizationsAgainstPolarization = () => {
               <p></p>
               <p></p>
               <div className="project-bottom-link-container">
-                <a className="btn btn-pink" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Take a look at the project</a>
+                <a className="btn btn-pink" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Explore the project</a>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 .more-projects {
-  margin-top: 200px;
-  margin-bottom: -200px;
-  padding: 150px 0;
+  position: relative;
+  margin: 200px 0 -450px;
+  padding: 300px 0;
   overflow: hidden;
   h2 {
     margin: 0 0 50px;
@@ -10,6 +10,30 @@
     position: relative;
     z-index: 1;
     text-align: center;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 200px 0;
+    border-color: transparent $white transparent transparent;
+  }
+  @media (max-width: $lg) {
+    padding: 250px 0 300px;
+    &:after {
+      border-bottom-width: 150px;
+    }
+  }
+  @media (max-width: $sm) {
+    padding: 200px 0 400px;
+    &:after {
+      border-bottom-width: 100px;
+    }
   }
 
   &.spotify {
@@ -26,7 +50,7 @@
       height: 100%;
       background-image: url(../assets/spotify_element.svg);
       background-repeat: no-repeat;
-      background-size: 200% auto;
+      background-size: 170% auto;
       background-position: 0 0;
       opacity: 0.7;
       @media (max-width: $lg) {
