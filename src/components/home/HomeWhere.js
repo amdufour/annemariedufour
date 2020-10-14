@@ -10,7 +10,7 @@ const HomeWhere = () => {
         <div className="row supports">
           <div className="col-12 col-sm-6 support support-digital">
             <h3>Digital supports</h3>
-            <p>Web pages or applications are the support of choice to explore a subject in depth. Thanks to carefully crafted interactions, the user can reveal information, zoom on a specific section, or even hear music.</p>
+            <p>Web pages or applications are the support of choice to explore a subject in depth. Thanks to carefully crafted interactions, the user can reveal information, zoom in on a specific section, or even hear music.</p>
           </div>
           <div className="col-12 col-sm-6 support support-print">
             <h3>Printed publications</h3>
