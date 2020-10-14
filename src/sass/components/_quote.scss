@@ -43,27 +43,27 @@
         background-size: contain;
       }
       &:before {
-        top: -140px;
-        left: -14%;
+        top: -160px;
+        left: -20%;
         background-image: url(../assets/quote-left.svg);
       }
       &:after {
-        bottom: -140px;
-        right: -14%;
+        bottom: -160px;
+        right: -20%;
         background-image: url(../assets/quote-right.svg);
       }
       @media (max-width: $lg) {
         &:before,
         &:after {
-          width: 150px;
-          height: 125px;
+          width: 120px;
+          height: 100px;
         }
         &:before {
-          top: -110px;
+          top: -120px;
           left: -30px;
         }
         &:after {
-          bottom: -110px;
+          bottom: -120px;
           right: -30px;
         }
       }
@@ -72,6 +72,12 @@
         &:after {
           width: 100px;
           height: 85px;
+        }
+        &:before {
+          top: -110px;
+        }
+        &:after {
+          bottom: -110px;
         }
       }
     }

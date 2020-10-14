@@ -73,13 +73,9 @@ const About = () => {
 
           <div id="quote-kian" className="quote quote-full-width">
             <div className="container">
-              <div className="row">
-                <div className="col-12 col-lg-10 offset-lg-1">
-                  <p className="quote-content">I had the chance to work with Anne-Marie in my team for many years. She has multiple qualities, combining empathy, energy, creativity, and professionalism. She is ready to face challenges outside of her comfort zone, and, on top of that, she delivers outstanding quality. I can only recommend her services to myself and around me.</p>
-                  <div className="quote-author">Kian Rieben</div>
-                  <div className="quote-organization"><a href="https://www.inovae.ch/" target="_blank" rel="noreferrer">Inovae</a></div>
-                </div>
-              </div>
+              <p className="quote-content">I had the chance to work with Anne-Marie in my team for many years. She has multiple qualities, combining empathy, energy, creativity, and professionalism. She is ready to face challenges outside of her comfort zone, and, on top of that, she delivers outstanding quality. I can only recommend her services to myself and around me.</p>
+              <div className="quote-author">Kian Rieben</div>
+              <div className="quote-organization"><a href="https://www.inovae.ch/" target="_blank" rel="noreferrer">Inovae</a></div>
             </div>
           </div>
 
