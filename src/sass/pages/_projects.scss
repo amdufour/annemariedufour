@@ -19,7 +19,12 @@
         transition-duration: 300ms;
       }
       .more {
-        height: 100px;
+        &:before {
+          border-width: 0 0 92px 500px;
+          opacity: 1;
+          transition-property: all;
+          @include easeSineOut;
+        }
       }
     }
   }
@@ -49,7 +54,7 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: 0;
+      height: 100px;
       overflow: hidden;
       opacity: 0;
       transition-property: all;
@@ -71,8 +76,11 @@
         height: 0;
         margin-top: -300px;
         border-style: solid;
-        border-width: 0 0 92px 500px;
+        border-width: 0 0 0 500px;
         border-color: transparent transparent $teal transparent;
+        opacity: 0;
+        transition-property: all;
+        @include easeSineIn;
       }
     }
   }
