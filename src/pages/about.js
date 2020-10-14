@@ -80,7 +80,7 @@ const About = () => {
           </div>
 
           <div className="container">
-            <h2>My aim, or what makes me get out of bed in the morning</h2>
+            <h2>My aim, or what gets me out of bed in the morning</h2>
             <p>As I am writing these words, we are witnessing extreme polarization in our societies. We observe a broad loss of trust in science and journalism. Populist leaders are actively working on weakening the pillars of our democracies. We struggle to question our habits and comfort to take the courageous actions needed to revert climate changes. And this scares the s**t out of me.</p>
             <p>In isolation, our actions have a limited impact. But I deeply believe in our ability to turn things around if we join forces. My small and humble contribution is to support organizations and companies which are taking action, which are building a better, more fair, and democratic world. Through my participation in data visualization, I aim to create bridges between our different human realities. I aspire to educate people on complex subjects. I hope my work carries values such as transparency, humility, openness, and a deep enthusiasm for life.</p>
 
