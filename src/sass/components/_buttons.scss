@@ -47,6 +47,17 @@ button {
     }
   }
 
+  // Dark buttons
+  &.btn-dark {
+    color: $white !important;
+    background-color: $text;
+    box-shadow: rgba($white, 0.5) 0px -5px 0px 0px inset;
+    &:hover {
+      color: $white !important;
+      box-shadow: rgba($pink, 1) 0 -53px 0 0 inset;
+    }
+  }
+
   // Pink on rollover
   &.btn-pink-rollover {
     &:hover {

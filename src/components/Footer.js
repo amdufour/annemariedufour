@@ -28,7 +28,8 @@ const Footer = () => {
             <div className="col-12 col-lg-6">
               <div className="copyright">&copy; {copyrightYears} Copyright Anne-Marie Dufour - All rights reserved</div>
               <div className="privacy">
-                <Link to="/privacy-statement">Privacy Statement</Link>
+                <Link to="/privacy-statement" className="privacy-statement">Privacy Statement</Link>
+                <a href="#" className="ch2-open-settings-btn">Cookie settings</a>
               </div>
             </div>
           </div>
