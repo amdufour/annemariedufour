@@ -60,7 +60,7 @@
       bottom: 135px;
     }
     @media (max-width: 374px) {
-      bottom: 190px;
+      bottom: 150px;
     }
   }
 
@@ -74,6 +74,7 @@
     }
     @media (max-width: 374px) {
       display: block;
+      bottom: 30px;
       .ch2-btn {
         display: block;
         margin: 20px auto !important;
