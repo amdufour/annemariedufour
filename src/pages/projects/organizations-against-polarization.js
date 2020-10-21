@@ -82,61 +82,32 @@ const OrganizationsAgainstPolarization = () => {
           <div className="container">
 
             {/* Project Overview */}
-            <div className="project-overview-container">
-              <div className="row align-items-center">
-                <div className="col-12 col-lg-5">
-                  <div className="project-overview">
-                    <div className="row">
-                      <div className="col-12 col-sm-6">
-                        <div className="overview-element">
-                          <h3>Project type</h3>
-                          <div>Personal project</div>
-                        </div>
-                        <div className="overview-element">
-                          <h3>Data manipulation and analysis</h3>
-                          <div>SQL, Python</div>
-                        </div>
-                        <div className="overview-element">
-                          <h3>Data visualization</h3>
-                          <div>D3.js</div>
-                        </div>
-                      </div>
-                      <div className="col-12 col-sm-6">
-                        <div className="overview-element">
-                          <h3>Support</h3>
-                          <div>Digital</div>
-                        </div>
-                        <div className="overview-element">
-                          <h3>Dataset</h3>
-                          <div><a href="https://data.world/carlvlewis/interdependence-ngos-by-funding-reach" title="Access the dataset" target="_blank" rel="noreferrer">Interdependence NGOs by Funding</a></div>
-                        </div>
-                        <div className="overview-element">
-                          <h3>Repository</h3>
-                          <div><a href="https://github.com/amdufour/ngos_network" title="Access the code repository" target="_blank" rel="noreferrer">ngos_network</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-lg-7">
-                  <div className='project-main-image-container'>
-                    <a className="btn btn-white" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">
-                      <Image className="project-main-image" fluid={projectImages.allFile.nodes[1].childImageSharp.fluid} alt="Screenshot of the project" />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-12 col-lg-7 offset-lg-5">
-                  <div className="project-btn-container">
-                    <a className="btn btn-pink-rollover" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Explore the project</a>
-                  </div>
+            <p>Polarization in Western Democracies is a significant concern and has led new and existing nonprofit organizations (NGOs) to focus on this problem. Knowing that we are stronger together, I wondered how their actions combine and generate an even more substantial impact.</p>
+            <div className="project-curiosity">
+              <div className="curiosity-label">Main curiosity behind this visualization:</div>
+              <h2>How are the focus and actions of Nonprofit Organizations interconnected?</h2>
+            </div>
+            <p>In this project, I used D3.js to generate a network of NGOs linked by their shared fields of action like immigration, democracy, and social justice. The visualization is architected for exploration, to discover the scale at which these NGOs operate (Global, National, Regional, etc.) and other organizations with which they share one or many fields (s) of action.</p>
+            <div className="meta-container">
+              <a className="image-link" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">
+                <Image className="project-main-image" fluid={projectImages.allFile.nodes[1].childImageSharp.fluid} alt="Screenshot of the project" />
+              </a>
+              <div className="project-meta">
+                <div className="row">
+                  <div className="col-12 col-sm-6 col-md-4 meta-item"><span className="label">Project type: </span>Personal</div>
+                  <div className="col-12 col-sm-6 col-md-4 meta-item"><span className="label">Support: </span>Digital</div>
+                  <div className="col-12 col-sm-6 col-md-4 meta-item"><span className="label">Dataset: </span><a href="https://data.world/carlvlewis/interdependence-ngos-by-funding-reach" title="Access the dataset" target="_blank" rel="noreferrer">NGOs Interdependence</a></div>
+                  <div className="col-12 col-sm-6 col-md-4 meta-item"><span className="label">Data manipulation and analysis: </span>SQL, Python</div>
+                  <div className="col-12 col-sm-6 col-md-4 meta-item"><span className="label">Data visualization: </span>D3.js</div>
+                  <div className="col-12 col-sm-6 col-md-4 meta-item"><span className="label">Repository: </span><a href="https://github.com/amdufour/ngos_network" title="Access the code repository" target="_blank" rel="noreferrer">ngos network</a></div>
                 </div>
               </div>
             </div>
+            <a className="btn btn-teal" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Explore the visualization</a>
 
             {/* Project description */}
             <div className="project-description">
+              <h2>Finding an angle of analysis</h2>
               <p>When starting a data visualization project, you usually have a dataset in hand, or at least a subject about which to find data. Once you've explored your dataset and made some necessary observations, you can start thinking about which type of data visualization would suit it best. The visualization is at the service of the data, not the reverse.</p>
               <p>For this project, I went against best practices and did precisely the reverse. The reason is, this project started with a design requirement for my website, where I wanted to display a network. You see, I entered the field of data visualization with the desire to support science, journalism, and democracy with my work, knowing that all of our little contributions combine and make a real difference. I planned to symbolically suggest this motivation with a network visualization, where connections pull and push nodes until they find equilibrium. Kind of like in real life!</p>
               <p>At first, I hoped to find a dataset of NGOs with information about their field of action, the countries in which they provide services, and maybe even how they collaborate. Unesco did assemble a <a href="https://uia.org/yearbook" title="Access Unesco's Yearbook of International Organizations" target="_blank" rel="noreferrer">Yearbook of International Organizations</a>, which seemed like an interesting starting point, but the price didn't match a personal project's budget. After a few hours of research, I was getting a little discouraged and was about to start searching for a different angle. But luckily, I stumbled upon a dataset assembled by <a href="https://data.world/carlvlewis" title="Access the profile of Carl V. Lewis on data.world" target="_blank" rel="noreferrer">Carl V. Lewis</a> in 2018 and available on <a href="https://data.world/carlvlewis/interdependence-ngos-by-funding-reach" title="Access the dataset" target="_blank" rel="noreferrer">data.world</a>. This data was collected manually by the author, focusing on nonprofits fighting polarization in Western society. Although this dataset is by no means complete and concentrates mainly on organizations operating from the United States, it matched my initial subject and contained enough information to create a rich visual. Also, 163 organizations seemed like a reasonable amount to make what I had in mind. I was relieved, I had a base to start with!</p>
@@ -230,7 +201,7 @@ const OrganizationsAgainstPolarization = () => {
               <p></p>
               <p></p>
               <div className="project-bottom-link-container">
-                <a className="btn btn-pink" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Explore the project</a>
+                <a className="btn btn-pink" href="https://amdufour.github.io/organizations-against-polarization/" target="_blank">Explore the visualization</a>
               </div>
             </div>
           </div>

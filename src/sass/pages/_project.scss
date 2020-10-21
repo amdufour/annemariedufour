@@ -3,6 +3,7 @@
   .page-project-header {
     position: relative;
     height: 600px;
+    margin-bottom: 100px;
     background-color: #fff;
     .row {
       height: 500px;
@@ -48,52 +49,76 @@
     }
   }
 
-  // Overview box
-  .project-overview-container {
-    margin: 115px 0;
-    padding: 40px 30px;
+  // Project overview
+  .project-curiosity {
+    margin: 50px 0;
+    padding: 40px 30px 40px 190px;
     color: $white;
     background-color: $teal;
+    background-image: url(../assets/skill-data-teal.svg);
+    background-repeat: no-repeat;
+    background-size: 120px 120px;
+    background-position: 40px 32px;
     border-radius: $radius;
-  }
-  .project-overview {
-    font-size: 1.6rem;
-    line-height: 1.2;
-    h3 {
-      margin: 0 0 2px;
-      font-size: 1.8rem;
+    h2 {
+      margin: 5px 0;
+      font-size: 3rem;
     }
-    .overview-element {
-      margin-bottom: 20px;
+    @media (max-width: $md) {
+      padding-left: 155px;
+      background-size: 100px 100px;
+      background-position: 30px 32px;
+    }
+    @media (max-width: $sm) {
+      padding-top: 90px;
+      padding-left: 30px;
+      background-size: 55px 55px;
+      background-position: 30px 25px;
+      .curiosity-label {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .meta-container {
+    position: relative;
+    margin: 50px 0;
+    padding-bottom: 60px;
+    background: #fff;
+    border: 2px solid $teal;
+    border-radius: $radius;
+    .project-meta {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 25px 30px;
+      background: $teal;
+      background: linear-gradient(0deg, rgba($teal, 1) 0%, rgba($teal, 0.6) 100%);
+      font-size: 1.5rem;
+      line-height: 1.1;
+      color: $white;
       a {
         color: $white;
-        box-shadow: $tealPale 0 -5px 0 0 inset;
+        box-shadow: rgba($white, 0.3) 0 -3px 0 0 inset;
         &:hover, &:focus {
-          box-shadow: $tealPale 0 -18px 0 0 inset;
+          box-shadow: rgba($white, 0.2) 0 -18px 0 0 inset;
         }
       }
-    }
-    @media (max-width: $lg) {
-      margin-bottom: 10px;
-    }
-  }
-  .project-main-image-container {
-    a {
-      display: block;
-      padding: 0;
-      box-shadow: none;
-      &:hover, &:focus {
-        box-shadow: none;
+      .meta-item {
+        margin: 8px 0;
       }
-      picture img {
-        border-radius: $radius;
+      .label {
+        font-weight: 600;
       }
     }
-  }
-  .project-btn-container {
-    margin-top: 30px;
-    @media (max-width: $lg) {
-      text-align: center;
+    @media (max-width: $sm) {
+      padding-bottom: 200px;
+    }
+    @media (max-width: 450px) {
+      padding-bottom: 250px;
     }
   }
 

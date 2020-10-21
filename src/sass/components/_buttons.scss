@@ -25,6 +25,12 @@ button {
     font-size: 1.6rem;
   }
 
+  // Small buttons
+  &.btn-sm {
+    padding: 10px 16px 13px;
+    font-size: 1.6rem;
+  }
+
   // Blue buttons
   &.btn-teal {
     color: $white !important;
