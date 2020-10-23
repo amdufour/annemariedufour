@@ -1,43 +1,5 @@
 .page-project {
   // Header
-  .page-project-header {
-    position: relative;
-    height: 600px;
-    margin-bottom: 100px;
-    background-color: #fff;
-    .row {
-      height: 500px;
-    }
-    h1 {
-      margin: 5px 0;
-    }
-    &:before,
-    &:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-    }
-    &:before {
-      top: 0;
-      height: 100%;
-      background: linear-gradient(0deg, rgba(#fff, 0) 0%, rgba(#fff, 0.7) 20%, rgba(#fff, 0.7) 60%, rgba(#fff, 0) 100%);
-    }
-    &:after {
-      bottom: 0;
-      height: 100%;
-      background-image: url(../assets/hero-triangles-red.svg);
-      background-repeat: no-repeat;
-      background-position: left bottom;
-      background-size: 100% auto;
-    }
-    @media (max-width: 1300px) {
-      height: 500px;
-    }
-    @media (max-width: $sm) {
-      height: calc(100vh - 60px);
-    }
-  }
   &.page-project-organizations-against-polarization .page-project-header {
     background-color: rgba($pink, 0.05);
     background-image: url(../assets/network-bg.svg);

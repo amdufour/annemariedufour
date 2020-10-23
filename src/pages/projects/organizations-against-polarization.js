@@ -68,7 +68,7 @@ const OrganizationsAgainstPolarization = () => {
       <section className="page-project page-project-organizations-against-polarization">
 
         {/* Project header */}
-        <div className="page-project-header">
+        <div className="page-project-header light">
           <div className="container">
             <div className="row align-items-center">
               <div className="col-12 col-lg-10">

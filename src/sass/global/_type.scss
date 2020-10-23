@@ -56,3 +56,16 @@ a {
 .emphasis {
   font-weight: 600;
 }
+
+// Paragraph without top margin
+.no-margin-top {
+  margin-top: 0;
+}
+
+// Superscripts
+.sup {
+  position: relative;
+  top: -4px;
+  margin-left: 4px;
+  font-size: 0.8em;
+}

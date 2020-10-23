@@ -14,6 +14,9 @@
   padding-top: 150px;
   background: $teal;
   background: linear-gradient(120deg, rgba($teal,1) 0%, rgba($yellow,1) 100%);
+  .logo-bg {
+    height: 120%;
+  }
   h1 {
     position: relative;
     z-index: 1;
@@ -51,8 +54,58 @@
     width: 100%;
   }
 }
-.small-header {
-  .logo-bg {
-    height: 120%;
+
+// Projects and Articles header
+.page-project-header,
+.page-article-header {
+  position: relative;
+  height: 600px;
+  margin-bottom: 100px;
+  background-color: #fff;
+  .row {
+    height: 500px;
+  }
+  h1 {
+    margin: 5px 0;
+  }
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  &:before {
+    top: 0;
+    height: 100%;
+  }
+  &:after {
+    bottom: 0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 100% auto;
+  }
+  &.dark {
+    &:before {
+      background: linear-gradient(0deg, rgba($black ,0.3) 0%, rgba($black ,0.36) 10%, rgba($black ,1) 50%, rgba($black ,0.3) 90%, rgba($black ,0.3) 100%);
+    }
+    &:after {
+      background-image: url(../assets/hero-triangles.svg);
+    }
+  }
+  &.light {
+    &:before {
+      background: linear-gradient(0deg, rgba(#fff, 0) 0%, rgba(#fff, 0.7) 20%, rgba(#fff, 0.7) 60%, rgba(#fff, 0) 100%);
+    }
+    &:after {
+      background-image: url(../assets/hero-triangles-red.svg);
+    }
+  }
+  @media (max-width: 1300px) {
+    height: 500px;
+  }
+  @media (max-width: $sm) {
+    height: calc(100vh - 60px);
   }
 }

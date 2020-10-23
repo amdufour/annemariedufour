@@ -43,6 +43,29 @@ ul {
   margin: 0;
   padding-left: 0;
   list-style: none;
+  &.bullet-list {
+    li {
+      position: relative;
+      margin: 8px 0;
+      padding-left: 30px;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 12px;
+        width: 7px;
+        height: 7px;
+        background: $teal;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+ol {
+  padding-left: 30px;
+  li {
+    margin: 8px 0;
+  }
 }
 
 .align-right {

@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="row">
             <div className="col-12 col-lg-6">
-              <div className="credits">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank" rel="noreferrer">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank" rel="noreferrer">www.flaticons.com</a></div>
+              <div className="credits">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik" target="_blank" rel="noreferrer">Freepik</a> and <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons" target="_blank" rel="noreferrer">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank" rel="noreferrer">www.flaticons.com</a></div>
             </div>
             <div className="col-12 col-lg-6">
               <div className="copyright">&copy; {copyrightYears} Copyright Anne-Marie Dufour - All rights reserved</div>

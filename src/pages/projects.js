@@ -19,7 +19,7 @@ const Projects = () => {
         </div>
         <div className="page-content projects">
           <div className="container">
-            <div className="row justify-content-center">
+            <div className="row">
               {projectIds.map((id, index) => {
                 return (
                   <div key={id} className="col-12 col-sm-6">

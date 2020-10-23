@@ -16,6 +16,7 @@
 @import "components/quote";
 @import "components/social-links";
 @import "components/footer";
+@import "components/cta-contact";
 @import "components/cta-portfolio";
 @import "components/projects-more";
 
@@ -29,6 +30,7 @@
 
 // Inner pages
 @import "pages/about";
+@import "pages/article";
 @import "pages/contact";
 @import "pages/error";
 @import "pages/projects";
