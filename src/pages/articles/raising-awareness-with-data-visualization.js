@@ -83,7 +83,7 @@ const RaisingAwarenessWithViz = () => {
                 </ul>
               </div>
               <div className="article-section">
-                <h3>Market your work</h3>
+                <h3>Market your visualization</h3>
                 <ul className="bullet-list">
                   <li>You've created a compelling visualization? Congrats! But there's still work to do. Carefully planned and executed marketing efforts can make or break the success of your campaign.</li>
                   <li>Initiate discussions on social platforms about your viz and what it reveals.</li>
