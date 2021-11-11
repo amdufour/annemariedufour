@@ -1,9 +1,5 @@
 .navbar-mobile {
   height: 70px;
-  .logo-container a .logo {
-    width: 44px;
-    height: 40px;
-  }
 
   // Hamburger
   /* From https://jonsuh.com/hamburgers/ */
@@ -83,8 +79,9 @@
       box-shadow: none;
       .logo {
         display: block;
-        margin: 70px auto 0;
-        height: 70px;
+        margin: 70px auto 50px;
+        width: 150px;
+        height: auto;
       }
     }
     .main-navigation {

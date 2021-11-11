@@ -14,9 +14,6 @@
   padding-top: 150px;
   background: $teal;
   background: linear-gradient(120deg, rgba($teal,1) 0%, rgba($yellow,1) 100%);
-  .logo-bg {
-    height: 120%;
-  }
   h1 {
     position: relative;
     z-index: 1;
@@ -24,34 +21,6 @@
   @media (max-width: $sm) {
     height: 300px;
     padding-top: 90px;
-  }
-}
-
-// Header logo in background
-.logo-bg {
-  position: absolute;
-  z-index: 0;
-  top: -80px;
-  left: -70px;
-  width: 42%;
-  height: 60%;
-  background-image: url(../assets/logo.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 0 0;
-  opacity: 0.3;
-  @media (max-width: $xl) {
-    width: 50%;
-  }
-  @media (max-width: $lg) {
-    left: -150px;
-    width: 60%;
-  }
-  @media (max-width: $md) {
-    width: 80%;
-  }
-  @media (max-width: $sm) {
-    width: 100%;
   }
 }
 

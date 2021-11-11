@@ -7,20 +7,20 @@
 
   // Logo
   .logo-container {
+    display: flex;
+    align-items: center;
     a {
       box-shadow: none;
       .logo {
         display: block;
-        width: 58px;
         path {
-          stroke-width: 1.5;
-          transition-property: stroke;
+          transition-property: fill;
           @include easeSineIn;
         }
       }
       &:hover, &:focus {
         .logo path {
-          stroke: $yellow;
+          fill: $yellow;
           @include easeSineOut;
         }
       }
@@ -41,6 +41,9 @@
     height: 100%;
     li {
       display: flex;
+      &:first-of-type {
+        display: none;
+      }
     }
     a {
       position: relative;
@@ -106,7 +109,12 @@
   }
   &.homepage {
     .logo-container a {
-      display: none;
+      cursor: default;
+      &:hover, &:focus {
+        .logo path {
+          fill: $white;
+        }
+      }
     }
   }
 }

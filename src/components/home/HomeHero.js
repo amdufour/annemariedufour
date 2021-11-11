@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 const HomeHero = () => {
   return (
     <div className="homehero">
-      <div className="logo-bg"></div>
       <div className="container">
         <div className="tagline">
           <div>Delightfully crafted Data Stories <span className="rotating-text rotating-text-main">leave <span className="em">a Durable Imprint</span></span></div>
