@@ -2,7 +2,7 @@
   position: relative;
   height: calc(100vh + 80px);
   min-height: 800px;
-  padding-top: 270px;
+  padding-top: 300px;
   background: $teal;
   background: linear-gradient(120deg, rgba($teal,1) 0%, rgba($yellow,1) 100%);
   .container {
@@ -10,7 +10,7 @@
     z-index: 1;
   }
   @media (max-height: 900px) {
-    padding-top: 200px;
+    padding-top: 250px;
   }
   @media (max-width: $xl) {
     height: calc(100vh + 38px);
@@ -26,7 +26,6 @@
   }
   @media (max-width: $sm) {
     height: calc(100vh + 10px);
-    padding-top: 150px;
   }
 
   // Text
@@ -40,6 +39,9 @@
       position: relative;
       z-index: 1;
       max-width: 750px;
+    }
+    .rotating-text-main {
+      display: block;
     }
     .rotating-text {
       .em {
@@ -58,7 +60,7 @@
       background-color: rgba($white, 0.3);
     }
     @media (max-width: 650px) {
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
   }
   .introduction {

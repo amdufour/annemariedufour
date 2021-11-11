@@ -43,14 +43,13 @@ footer {
       .logo {
         height: 90px;
         path {
-          stroke-width: 1;
-          transition-property: stroke;
+          transition-property: fill;
           @include easeSineIn;
         }
       }
       &:hover, &:focus {
         .logo path {
-          stroke: $yellow;
+          fill: $yellow;
           @include easeSineOut;
         }
       }
