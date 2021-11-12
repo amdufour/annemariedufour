@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
+    "d3-selection": "^3.0.0",
     "file-loader": "^6.1.0",
     "gatsby": "^2.24.47",
     "gatsby-image": "^2.4.18",
