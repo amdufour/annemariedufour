@@ -1,0 +1,37 @@
+.home-what {
+  position: relative;
+  padding-top: 230px;
+  padding-bottom: 1500px;
+  color: $white;
+  background-color: $black;
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 100vw 60px 0;
+    border-color: transparent $white transparent transparent;
+  }
+  h3 {
+    font-weight: 400;
+    span {
+      display: block;
+    }
+  }
+
+  @media (max-width: $md) {
+    &:before {
+      border-bottom-width: 40px;
+    }
+  }
+  @media (max-width: $sm) {
+    &:before {
+      border-bottom-width: 30px;
+    }
+  }
+}
