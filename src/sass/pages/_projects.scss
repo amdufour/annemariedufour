@@ -104,6 +104,18 @@
     background-size: 600px auto;
     background-position: right -30px bottom 25px;
   }
+  &.project-astronauts .project-thumbnail {
+    background-color: #fff;
+    background-image: url(../assets/project-astronauts.png);
+  }
+  &.project-oscars .project-thumbnail {
+    background-color: #fff;
+    background-image: url(../assets/project-oscars.svg);
+  }
+  &.project-tennis-pay-gap .project-thumbnail {
+    background-color: #fff;
+    background-image: url(../assets/project-tennis.png);
+  }
   .project-title {
     margin: 15px 0 5px;
     font-size: 2.2rem;

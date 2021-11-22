@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectThumbnail from '../../constants/projectsThumbnails'
+import { Link } from 'gatsby'
 
 const projectIds = [1, 2, 3, 4]
 
@@ -16,6 +17,7 @@ const HomeProjects = () => {
               </div>
             )
           })}
+          <Link className="btn btn-white" to="/projects">View more</Link>
         </div>
       </div>
     </div>
