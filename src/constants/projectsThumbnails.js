@@ -4,6 +4,24 @@ import { Link } from 'gatsby'
 const projectsInfo = [
   {
     id: 1,
+    class: 'project-decade-review',
+    title: 'A Decade in Review',
+    readmore: 'Explore the project',
+    support: 'digital',
+    link: 'https://amdufour.github.io/decade-in-review/',
+    external: true
+  },
+  {
+    id: 2,
+    class: 'project-mayu',
+    title: 'Mayu',
+    readmore: 'Explore the project',
+    support: 'digital, created in collaboration with Inbal Rief',
+    link: 'https://mayustorybook.life/',
+    external: true
+  },
+  {
+    id: 3,
     class: 'project-foodprint',
     title: 'Your Daily Foodprint',
     readmore: 'Explore the project',
@@ -12,7 +30,7 @@ const projectsInfo = [
     external: true
   },
   {
-    id: 2,
+    id: 4,
     class: 'project-network',
     title: 'Organizations joining forces against polarization',
     support: 'digital',
@@ -21,7 +39,7 @@ const projectsInfo = [
     external: false
   },
   {
-    id: 3,
+    id: 5,
     class: 'project-astronauts',
     title: 'The Cohorts of NASA astronauts',
     support: 'digital',
@@ -30,7 +48,7 @@ const projectsInfo = [
     external: true
   },
   {
-    id: 4,
+    id: 6,
     class: 'project-music',
     title: 'Top 100 songs streamed on Spotify',
     support: 'digital',
@@ -39,7 +57,7 @@ const projectsInfo = [
     external: true
   },
   {
-    id: 5,
+    id: 7,
     class: 'project-oscars',
     title: 'So white, an evolution',
     readmore: 'Explore the project',
@@ -48,7 +66,7 @@ const projectsInfo = [
     external: true
   },
   {
-    id: 6,
+    id: 8,
     class: 'project-tennis-pay-gap',
     title: 'Exploring the Tennis gender pay gap in 2019',
     readmore: 'Explore the project',
@@ -57,7 +75,7 @@ const projectsInfo = [
     external: true
   },
   {
-    id: 7,
+    id: 9,
     class: 'project-nobel',
     title: 'A century of Nobel prizes',
     readmore: 'Explore the project',

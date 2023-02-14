@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import SEO from '../components/SEO'
 import ProjectThumbnail from '../constants/projectsThumbnails'
 
-const projectIds = [1, 2, 3, 4, 5, 6, 7]
+const projectIds = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 const Projects = () => {
   return (

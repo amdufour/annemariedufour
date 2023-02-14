@@ -104,6 +104,14 @@
     background-size: 600px auto;
     background-position: right -30px bottom 25px;
   }
+  &.project-decade-review .project-thumbnail {
+    background-color: #fff;
+    background-image: url(../assets/project-review.svg);
+  }
+  &.project-mayu .project-thumbnail {
+    background-color: #fff;
+    background-image: url(../assets/project-mayu.png);
+  }
   &.project-astronauts .project-thumbnail {
     background-color: #fff;
     background-image: url(../assets/project-astronauts.png);
